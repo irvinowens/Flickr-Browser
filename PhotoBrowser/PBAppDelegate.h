@@ -3,10 +3,11 @@
 //  PhotoBrowser
 //
 //  Created by Irvin Owens on 11/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Owensperformance. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "PBConsts.h"
 
 @interface PBAppDelegate : UIResponder <UIApplicationDelegate>
 
