@@ -42,6 +42,11 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
     self.navigationItem.rightBarButtonItem = addButton;
+    if(self.provider == nil)
+    {
+        self.provider = [[PBDataProvider alloc] init];
+        [self.provider updateDataWithPullFromFeed];
+    }
 }
 
 - (void)viewDidUnload

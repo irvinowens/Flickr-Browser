@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "PBRequest.h"
+#import "PBRequestConnection.h"
 
-@interface PBFeedRequest : PBRequest
+@interface PBFeedRequest : PBRequestConnection
 
 /**
  * Initialize a new feed request object with

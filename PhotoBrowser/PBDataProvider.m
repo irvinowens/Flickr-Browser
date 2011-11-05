@@ -10,7 +10,7 @@
 
 @implementation PBDataProvider
 
-@synthesize fmat, delegate;
+@synthesize fmat, delegate, req;
 
 - (id)init
 {
@@ -23,7 +23,9 @@
 
 - (void)updateDataWithPullFromFeed
 {
-    PBFeedRequest *req = (PBFeedRequest *)[PBRequestFactory makeRequestWith:kFEED_REQUEST_TYPE andDelegate:self];
+    self.req = nil;
+    self.req = [PBRequestFactory makeRequestWith:kFEED_REQUEST_TYPE andDelegate:self];
+    DebugLog(@"Requesting feed");
 }
 
 - (NSMutableArray *)returnArrayOfModelObjectForGivenXmlFeedString:(DDXMLDocument *)feed
@@ -33,7 +35,7 @@
     NSArray *entryNodes = [(DDXMLElement *)feed elementsForName:@"entry"];
     for(DDXMLElement *ele in entryNodes)
     {
-        DebugLog(@"Feed Element: %@", [ele xmlString]);
+        DebugLog(@"Feed Element: %@", [(DDXMLNode *)ele XMLString]);
         PBFlickrPicture *pic = [[PBFlickrPicture alloc] init];
         PBAuthor *author = [self getAuthorModelForAuthorXmlNode:ele];
         // might cause a problem if somehow there are more than 1 author
@@ -73,7 +75,6 @@
 
 - (PBAuthor *)getAuthorModelForAuthorXmlNode:(DDXMLElement *)entryElement
 {
-    NSError *error = nil;
     PBAuthor *author = [[PBAuthor alloc] init];
     NSArray *authorArr = [entryElement elementsForName:@"author"];
     for(DDXMLElement *authorElement in authorArr)
@@ -88,18 +89,36 @@
 #pragma mark-
 #pragma mark Begin PBFeedRequestDelegate methods
 
-- (void)requestCompleted:(PBRequest *)request withData:(NSData *)data
+- (void)requestCompleted:(PBRequestConnection *)request withData:(NSData *)data
 {
+#ifdef DEBUG_MODE
+    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    DebugLog(@"Response %@", str);
+#endif
     NSError *error = nil;
     DDXMLDocument *doc = [[DDXMLDocument alloc] initWithData:data 
-                                                     options:nil 
+                                                     options:DDXMLDocumentXMLKind 
                                                        error:&error];
+    if(error != nil){
+        
+        DebugLog(@"XML Parsing Error : %@", [error localizedDescription]);
+    }
     NSMutableArray *arr = [self returnArrayOfModelObjectForGivenXmlFeedString:doc];
     if([self.delegate respondsToSelector:@selector(provider:receivedAndProcessedModelObjects:)])
     {
         [self.delegate performSelector:@selector(provider:receivedAndProcessedModelObjects:) withObject:self withObject:arr];
     }
     
+}
+
+- (void)requestMade:(PBRequestConnection *)request
+{
+    DebugLog(@"Request made through delegate");
+}
+
+- (void)request:(PBRequestConnection *)request experiencedError:(NSError *)error
+{
+    DebugLog(@"Felt Error %@", error);
 }
 
 #pragma mark End PBFeedRequestDelegate methods

@@ -17,11 +17,18 @@
  */
 
 
-@interface PBRequest : NSObject <PBNSURLConnectionDelegateProtocol>{
+@interface PBRequestConnection : NSObject <PBNSURLConnectionDelegateProtocol>{
     __unsafe_unretained id <PBRequestDataDelegate> delegate;
+    PBRequestDelegate *requestDelegate;
 }
 
 @property (nonatomic, assign) id <PBRequestDataDelegate> delegate;
+
+/**
+ * The delegate for the NSURLRequest
+ */
+
+@property (nonatomic, strong) PBRequestDelegate *requestDelegate;
 
 /**
  * Initializes a request to a given url
@@ -39,7 +46,7 @@
  * @param (PBRequest *)request The request that is in progress
  */
 
-- (void)requestMade:(PBRequest *)request;
+- (void)requestMade:(PBRequestConnection *)request;
 
 /**
  * Tell the delegate the request completed and provide full data
@@ -48,7 +55,7 @@
  * @return The full data response
  */
 
-- (void)requestCompleted:(PBRequest *)request withData:(NSData *)data;
+- (void)requestCompleted:(PBRequestConnection *)request withData:(NSData *)data;
 
 /**
  * The request could not be completed for some reason
@@ -56,6 +63,6 @@
  * @param (NSError *)error The error that happened
  */
 
-- (void)request:(PBRequest *)request experiencedError:(NSError *)error;
+- (void)request:(PBRequestConnection *)request experiencedError:(NSError *)error;
 
 @end

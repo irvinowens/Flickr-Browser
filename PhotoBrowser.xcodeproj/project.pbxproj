@@ -46,8 +46,8 @@
 		7EC42B6C1464E9BE00844DE3 /* PBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B6A1464E9BE00844DE3 /* PBImage.m */; };
 		7EC42B6F1464EADA00844DE3 /* PBFlickrPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B6E1464EADA00844DE3 /* PBFlickrPicture.m */; };
 		7EC42B701464EADA00844DE3 /* PBFlickrPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B6E1464EADA00844DE3 /* PBFlickrPicture.m */; };
-		7EC42B731464F0C500844DE3 /* PBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B721464F0C500844DE3 /* PBRequest.m */; };
-		7EC42B741464F0C500844DE3 /* PBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B721464F0C500844DE3 /* PBRequest.m */; };
+		7EC42B731464F0C500844DE3 /* PBRequestConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B721464F0C500844DE3 /* PBRequestConnection.m */; };
+		7EC42B741464F0C500844DE3 /* PBRequestConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B721464F0C500844DE3 /* PBRequestConnection.m */; };
 		7EC42B771464F0D700844DE3 /* PBFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B761464F0D700844DE3 /* PBFeedRequest.m */; };
 		7EC42B781464F0D700844DE3 /* PBFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B761464F0D700844DE3 /* PBFeedRequest.m */; };
 		7EC42B7B1464F0EB00844DE3 /* PBImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B7A1464F0EB00844DE3 /* PBImageRequest.m */; };
@@ -119,8 +119,8 @@
 		7EC42B6A1464E9BE00844DE3 /* PBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBImage.m; path = PhotoBrowser/PBImage.m; sourceTree = "<group>"; };
 		7EC42B6D1464EADA00844DE3 /* PBFlickrPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFlickrPicture.h; path = PhotoBrowser/PBFlickrPicture.h; sourceTree = "<group>"; };
 		7EC42B6E1464EADA00844DE3 /* PBFlickrPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFlickrPicture.m; path = PhotoBrowser/PBFlickrPicture.m; sourceTree = "<group>"; };
-		7EC42B711464F0C500844DE3 /* PBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBRequest.h; path = PhotoBrowser/PBRequest.h; sourceTree = "<group>"; };
-		7EC42B721464F0C500844DE3 /* PBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRequest.m; path = PhotoBrowser/PBRequest.m; sourceTree = "<group>"; };
+		7EC42B711464F0C500844DE3 /* PBRequestConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; name = PBRequestConnection.h; path = PhotoBrowser/PBRequestConnection.h; sourceTree = "<group>"; };
+		7EC42B721464F0C500844DE3 /* PBRequestConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRequestConnection.m; path = PhotoBrowser/PBRequestConnection.m; sourceTree = "<group>"; };
 		7EC42B751464F0D700844DE3 /* PBFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFeedRequest.h; path = PhotoBrowser/PBFeedRequest.h; sourceTree = "<group>"; };
 		7EC42B761464F0D700844DE3 /* PBFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFeedRequest.m; path = PhotoBrowser/PBFeedRequest.m; sourceTree = "<group>"; };
 		7EC42B791464F0EB00844DE3 /* PBImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBImageRequest.h; path = PhotoBrowser/PBImageRequest.h; sourceTree = "<group>"; };
@@ -316,8 +316,8 @@
 			children = (
 				7EC42B5C1464583000844DE3 /* PBRequestFactory.h */,
 				7EC42B5D1464583000844DE3 /* PBRequestFactory.m */,
-				7EC42B711464F0C500844DE3 /* PBRequest.h */,
-				7EC42B721464F0C500844DE3 /* PBRequest.m */,
+				7EC42B711464F0C500844DE3 /* PBRequestConnection.h */,
+				7EC42B721464F0C500844DE3 /* PBRequestConnection.m */,
 				7EC42B751464F0D700844DE3 /* PBFeedRequest.h */,
 				7EC42B761464F0D700844DE3 /* PBFeedRequest.m */,
 				7EC42B791464F0EB00844DE3 /* PBImageRequest.h */,
@@ -468,7 +468,7 @@
 				7EC42B671464E26D00844DE3 /* PBAuthor.m in Sources */,
 				7EC42B6B1464E9BE00844DE3 /* PBImage.m in Sources */,
 				7EC42B6F1464EADA00844DE3 /* PBFlickrPicture.m in Sources */,
-				7EC42B731464F0C500844DE3 /* PBRequest.m in Sources */,
+				7EC42B731464F0C500844DE3 /* PBRequestConnection.m in Sources */,
 				7EC42B771464F0D700844DE3 /* PBFeedRequest.m in Sources */,
 				7EC42B7B1464F0EB00844DE3 /* PBImageRequest.m in Sources */,
 				7EC42B801464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */,
@@ -492,7 +492,7 @@
 				7EC42B681464E26D00844DE3 /* PBAuthor.m in Sources */,
 				7EC42B6C1464E9BE00844DE3 /* PBImage.m in Sources */,
 				7EC42B701464EADA00844DE3 /* PBFlickrPicture.m in Sources */,
-				7EC42B741464F0C500844DE3 /* PBRequest.m in Sources */,
+				7EC42B741464F0C500844DE3 /* PBRequestConnection.m in Sources */,
 				7EC42B781464F0D700844DE3 /* PBFeedRequest.m in Sources */,
 				7EC42B7C1464F0EB00844DE3 /* PBImageRequest.m in Sources */,
 				7EC42B811464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */,
@@ -663,6 +663,7 @@
 				7EC42B331462F8D200844DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EC42B341462F8D200844DE3 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +672,7 @@
 				7EC42B361462F8D200844DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

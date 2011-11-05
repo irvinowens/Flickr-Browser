@@ -6,11 +6,11 @@
 //  Copyright (c) 2011 Owensperformance. All rights reserved.
 //
 
-#import "PBRequest.h"
+#import "PBRequestConnection.h"
 
-@implementation PBRequest
+@implementation PBRequestConnection
 
-@synthesize delegate;
+@synthesize delegate, requestDelegate;
 
 - (id)init
 {
@@ -23,9 +23,9 @@
 
 - (void)makeRequestToUrl:(NSURL *)url
 {
-    PBRequestDelegate *reqDel = [[PBRequestDelegate alloc] initWithHandler:self];
+    self.requestDelegate = [[PBRequestDelegate alloc] initWithHandler:self];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] 
-                                                            delegate:reqDel 
+                                                            delegate:self.requestDelegate 
                                                     startImmediately:NO];
     [conn start];
     if([self.delegate respondsToSelector:@selector(requestMade:)])
@@ -39,7 +39,13 @@
 
 - (void)receivedData:(NSData *)receivedData
 {
-    if([self.delegate respondsToSelector:@selector(requestCompleted:)])
+    DebugLog(@"Received the data");
+    NSString *str = nil;
+#ifdef DEBUG_MODE
+    str = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    DebugLog(@"Response %@", str);
+#endif
+    if([self.delegate respondsToSelector:@selector(requestCompleted:withData:)])
     {
         [self.delegate performSelector:@selector(requestCompleted:withData:) 
                             withObject:self 

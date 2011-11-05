@@ -13,9 +13,9 @@
 
 @implementation PBRequestFactory
 
-+(PBRequest *)makeRequestWith:(int)type andDelegate:(id)delegate
++(PBRequestConnection *)makeRequestWith:(int)type andDelegate:(id)delegate
 {
-    PBRequest *req = nil;
+    PBRequestConnection *req = nil;
     switch(type)
     {
         case kFEED:

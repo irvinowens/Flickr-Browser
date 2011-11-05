@@ -3,7 +3,7 @@
 //  PhotoBrowser
 //
 //  Created by Irvin Owens on 11/4/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Owensperformance. All rights reserved.
 //
 
 #import "PBConsts.h"
@@ -31,7 +31,7 @@
  * Store for intermediate bytes of data, if necessary
  */
 
-@property (nonatomic, strong) NSMutableData *receivedData;
+@property (strong) NSMutableData *receivedData;
 
 /**
  * Just go ahead and initialize the connection delegate

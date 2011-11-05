@@ -7,7 +7,7 @@
 //
 
 #import "PBConsts.h"
-#import "PBRequest.h"
+#import "PBRequestConnection.h"
 #import "PBFeedRequest.h"
 #import "PBImageRequest.h"
 
@@ -27,6 +27,6 @@
  * @param (id)delegate The request delegate
  */
 
-+(PBRequest *)makeRequestWith:(int)type andDelegate:(id)delegate;
++(PBRequestConnection *)makeRequestWith:(int)type andDelegate:(id)delegate;
 
 @end

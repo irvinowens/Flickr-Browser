@@ -22,12 +22,20 @@
  * from a given data source
  */
 
-@interface PBDataProvider : NSObject{
+@interface PBDataProvider : NSObject <PBRequestDataDelegate>{
     __unsafe_unretained id <PBDataProviderConsumerProtocol> delegate;
     NSDateFormatter *fmat;
+    PBRequestConnection *req;
 }
 
 @property (nonatomic, strong) NSDateFormatter *fmat;
+
+/**
+ * We want to hold onto the request for the lifecycle of the
+ * processing
+ */
+
+@property (nonatomic, strong) PBRequestConnection *req;
 
 @property (nonatomic, assign) id <PBDataProviderConsumerProtocol> delegate;
 

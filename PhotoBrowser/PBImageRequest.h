@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "PBRequest.h"
+#import "PBRequestConnection.h"
 
-@interface PBImageRequest : PBRequest
+@interface PBImageRequest : PBRequestConnection
 
 @end
