@@ -17,13 +17,14 @@
     if(self = [super init])
     {
         self.handler = myHandler;
-        self.receivedData = [NSMutableData dataWithLength:20000];
+        self.receivedData = [NSMutableData dataWithLength:0];
     }
     return self;
 }
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+    DebugLog(@"Error : %@", [error localizedDescription]);
     self.receivedData = nil;
     if([self.handler respondsToSelector:@selector(connectionFailure:)])
     {
@@ -33,31 +34,21 @@
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    DebugLog(@"Did Receive response");
-    self.receivedData = [NSMutableData dataWithLength:20000];
+    self.receivedData = [NSMutableData dataWithLength:0];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.receivedData appendData:data];
     DebugLog(@"Did receive bytes size : %d", [data length]);
-    DebugLog(@"Total data bytes size : %d", [self.receivedData length]);
-#ifdef DEBUG_MODE
-    NSString *str = [[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding];
-    DebugLog(@"Block %@", str);
     if(self.receivedData == nil)
     {
         DebugLog(@"Received data is nil");
     }
-#endif
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-#ifdef DEBUG_MODE
-    NSString *str = [[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding];
-    DebugLog(@"Response %@", str);
-#endif
     if([self.handler respondsToSelector:@selector(receivedData:)])
     {
         [self.handler performSelector:@selector(receivedData:) withObject:self.receivedData];

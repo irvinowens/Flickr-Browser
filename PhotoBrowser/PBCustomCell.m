@@ -1,16 +1,16 @@
 //
-//  PBMultiThumbnailCell.m
+//  PBCustomCell.m
 //  PhotoBrowser
 //
-//  Created by Irvin Owens on 11/4/11.
+//  Created by Irvin Owens on 11/5/11.
 //  Copyright (c) 2011 Owensperformance. All rights reserved.
 //
 
-#import "PBMultiThumbnailCell.h"
+#import "PBCustomCell.h"
 
-@implementation PBMultiThumbnailCell
+@implementation PBCustomCell
 
-@synthesize imageView1, imageView2, imageView3, imageView4;
+@synthesize image;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -21,11 +21,29 @@
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self.image loadPhotoThumbnailImage];
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
 }
+
+#pragma mark-
+#pragma mark Begin PBImageLoadingProtocol methods
+
+- (void)imageLoadedSuccessfully:(PBImage *)imagePic
+{
+    self.imageView.image = imagePic.photoThumbnail;
+    [self setNeedsDisplay];
+}
+
+#pragma mark-
+#pragma mark End PBImageLoadingProtocol methods
 
 @end

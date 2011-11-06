@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PBFlickrPicture.h"
 
-@interface PBDetailViewController : UIViewController
+@interface PBDetailViewController : UIViewController<PBImageLoadingProtocol>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) PBFlickrPicture *detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressView;
 
 @end

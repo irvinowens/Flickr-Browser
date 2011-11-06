@@ -30,20 +30,12 @@
 
 - (NSMutableArray *)returnArrayOfModelObjectForGivenXmlFeedString:(DDXMLDocument *)feed
 {
-    NSError *error = nil;
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:500];
-    NSArray *entryNodes = [(DDXMLElement *)feed elementsForName:@"entry"];
+    NSArray *entryNodes = [[feed rootElement] elementsForName:@"entry"];
     for(DDXMLElement *ele in entryNodes)
     {
-        DebugLog(@"Feed Element: %@", [(DDXMLNode *)ele XMLString]);
         PBFlickrPicture *pic = [[PBFlickrPicture alloc] init];
         PBAuthor *author = [self getAuthorModelForAuthorXmlNode:ele];
-        // might cause a problem if somehow there are more than 1 author
-        NSArray *authorPicArray = [ele nodesForXPath:@"/link[rel='enclosure']" error:&error];
-        for(DDXMLElement *authorPic in authorPicArray)
-        {
-            author.profilePhoto = [[authorPic attributeForName:@"href"] stringValue];
-        }
         PBImage *image = [self getImageModelForEntryXmlNode:ele];
         pic.author = author;
         pic.image = image;
@@ -54,9 +46,9 @@
 
 - (PBImage *)getImageModelForEntryXmlNode:(DDXMLElement *)entryElement
 {
-    NSError *error = nil;
     PBImage *image = [[PBImage alloc] init];
     image.imageTitle = [[entryElement childAtIndex:0] stringValue];
+    DebugLog(@"image title : %@", image.imageTitle);
     image.imageId = [[entryElement childAtIndex:2] stringValue];
     NSDate *published = [self.fmat dateFromString:[[entryElement childAtIndex:3] stringValue]];
     image.publishedDate = published;
@@ -65,10 +57,19 @@
     NSDate *taken = [self.fmat dateFromString:[[entryElement childAtIndex:5] stringValue]];
     image.dateTaken = taken;
     image.content = [[entryElement childAtIndex:6] stringValue];
-     NSArray *webLinkArray = [entryElement nodesForXPath:@"/link[rel='alternate']" error:&error];
+    NSArray *webLinkArray = [entryElement elementsForName:@"link"];
     for(DDXMLElement *webLink in webLinkArray)
     {
-        image.webLink = [[webLink attributeForName:@"href"] stringValue];
+        if([[[webLink attributeForName:@"rel"] stringValue] isEqualToString:@"alternate"])
+        {
+            image.photoImageUri = [[webLink attributeForName:@"href"] stringValue];
+        }
+        if([[[webLink attributeForName:@"rel"] stringValue] isEqualToString:@"enclosure"])
+        {
+            image.photoImageUri = [[webLink attributeForName:@"href"] stringValue];
+            DebugLog(@"Photo Image URI : %@", image.photoImageUri);
+            image.photoThumbnailUri = [self convertFlickrLargerImageUriToThumbnailImageUri:image.photoImageUri];
+        }
     }
     return image;
 }
@@ -86,15 +87,44 @@
     return author;
 }
 
+- (NSString *)convertFlickrLargerImageUriToThumbnailImageUri:(NSString *)largerImageUri
+{
+    NSArray *filePathComponents = [largerImageUri componentsSeparatedByString:@"_"];
+    NSMutableArray *mutableFilePathComponents = [NSMutableArray arrayWithArray:filePathComponents];
+    NSString *lastObj = [mutableFilePathComponents lastObject];
+    NSString *flickrEndingWithoutFileSizeIndicator = [lastObj substringFromIndex:1];
+    NSString *newFlickrEndingWithThumbnailIndicator = [NSString stringWithFormat:@"t%@", flickrEndingWithoutFileSizeIndicator];
+    [mutableFilePathComponents removeLastObject];
+    [mutableFilePathComponents addObject:newFlickrEndingWithThumbnailIndicator];
+    NSString *newFlickrThumbnailUri = [mutableFilePathComponents componentsJoinedByString:@"_"];
+    return newFlickrThumbnailUri;
+    
+}
+
+- (NSMutableArray *)divideModelArrayIntoNestedArraysForThumbnailView:(NSMutableArray *)arr
+{
+    NSMutableArray *arrayOfArrays = [NSMutableArray arrayWithCapacity:20];
+    [arrayOfArrays addObject:[NSMutableArray arrayWithCapacity:4]];
+    PBFlickrPicture *pic = nil;
+    NSUInteger i, count = [arr count];
+    for(i = 0; i < count; i ++)
+    {
+        DebugLog(@"PicObj image name : %@", pic.image.photoThumbnailUri);
+        pic = (PBFlickrPicture *)[arr objectAtIndex:i];
+        [[arrayOfArrays lastObject] addObject:pic];
+        if(i != 0 && (count % 4) == 0){
+            DebugLog(@"Creating new arr");
+            [arrayOfArrays addObject:[NSMutableArray arrayWithCapacity:4]];
+        }
+    }
+    return arrayOfArrays;
+}
+
 #pragma mark-
 #pragma mark Begin PBFeedRequestDelegate methods
 
 - (void)requestCompleted:(PBRequestConnection *)request withData:(NSData *)data
 {
-#ifdef DEBUG_MODE
-    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    DebugLog(@"Response %@", str);
-#endif
     NSError *error = nil;
     DDXMLDocument *doc = [[DDXMLDocument alloc] initWithData:data 
                                                      options:DDXMLDocumentXMLKind 

@@ -17,7 +17,7 @@
 
 
 @interface PBRequestDelegate : NSObject <NSURLConnectionDelegate>{
-    __unsafe_unretained id handler;
+    id handler;
     NSMutableData *receivedData;
 }
 
@@ -25,7 +25,7 @@
  * The handler is the class to respond to inbound events
  */
 
-@property (nonatomic, assign) id handler;
+@property (nonatomic, strong) id handler;
 
 /**
  * Store for intermediate bytes of data, if necessary

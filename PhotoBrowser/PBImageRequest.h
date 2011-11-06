@@ -8,6 +8,10 @@
 
 #import "PBRequestConnection.h"
 
-@interface PBImageRequest : PBRequestConnection
+@interface PBImageRequest : PBRequestConnection{
+    int imageRequestType;
+}
+
+@property (nonatomic) int imageRequestType;
 
 @end

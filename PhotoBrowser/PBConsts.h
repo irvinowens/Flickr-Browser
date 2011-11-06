@@ -15,7 +15,7 @@
  * in debugging
  */
 
-#define DEBUG_MODE
+//#define DEBUG_MODE
 
 #ifdef DEBUG_MODE
 #define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
@@ -40,6 +40,24 @@ extern int const kFEED_REQUEST_TYPE;
  */
 
 extern int const kIMAGE_REQUEST_TYPE;
+
+/**
+ * The type of image to load : Thumbnail
+ */
+
+extern int const kTHUMBNAIL_PHOTO_IMAGE;
+
+/**
+ * The type of image to load : Full
+ */
+
+extern int const kFULL_PHOTO_IMAGE;
+
+/**
+ * The type of image to load : Author
+ */
+
+extern int const kAUTHOR_PHOTO_IMAGE;
 
 @interface PBConsts : NSObject
 

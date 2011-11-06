@@ -23,7 +23,7 @@
  */
 
 @interface PBDataProvider : NSObject <PBRequestDataDelegate>{
-    __unsafe_unretained id <PBDataProviderConsumerProtocol> delegate;
+    id <PBDataProviderConsumerProtocol> delegate;
     NSDateFormatter *fmat;
     PBRequestConnection *req;
 }
@@ -37,7 +37,7 @@
 
 @property (nonatomic, strong) PBRequestConnection *req;
 
-@property (nonatomic, assign) id <PBDataProviderConsumerProtocol> delegate;
+@property (nonatomic, strong) id <PBDataProviderConsumerProtocol> delegate;
 
 /**
  * Kickstart updating the data provider delegate with
@@ -70,6 +70,23 @@
  */
 
 - (PBImage *)getImageModelForEntryXmlNode:(DDXMLElement *)entryElement;
+
+/**
+ * Assuming a thumbnail table view, break the array of entities into
+ * subdivided array of subarrays
+ * @param (NSMutableArray *)arr The array to cut up
+ * @return A mutable array of arrays containing four image thumbnails
+ */
+
+- (NSMutableArray *)divideModelArrayIntoNestedArraysForThumbnailView:(NSMutableArray *)arr;
+
+/**
+ * Get Flickr thumbnail URI from feed larger image uri
+ * @param (NSString *)largerImageUri The image URI for the larger image
+ * @return The image string featuring the thumbnail uri
+ */
+
+- (NSString *)convertFlickrLargerImageUriToThumbnailImageUri:(NSString *)largerImageUri;
 
 @end
 

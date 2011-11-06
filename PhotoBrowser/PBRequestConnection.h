@@ -18,11 +18,13 @@
 
 
 @interface PBRequestConnection : NSObject <PBNSURLConnectionDelegateProtocol>{
-    __unsafe_unretained id <PBRequestDataDelegate> delegate;
+    // TODO: Change this back to __unsafe_unretained once I figure out the
+    // appropriate delegate mechanism with ARC
+    id <PBRequestDataDelegate> delegate;
     PBRequestDelegate *requestDelegate;
 }
 
-@property (nonatomic, assign) id <PBRequestDataDelegate> delegate;
+@property (nonatomic, strong) id <PBRequestDataDelegate> delegate;
 
 /**
  * The delegate for the NSURLRequest

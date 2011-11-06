@@ -9,13 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "PBDataProvider.h"
+#import "PBCustomCell.h"
 
-@interface PBMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>{
+@interface PBMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, PBDataProviderConsumerProtocol>{
     PBDataProvider *provider;
+    NSMutableArray *imageGrid;
 }
 
 @property (nonatomic, strong) PBDataProvider *provider;
+@property (nonatomic, strong) NSMutableArray *imageGrid;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+/**
+ * Refresh list of flickr items
+ */
+
+- (void)reloadData;
 
 @end

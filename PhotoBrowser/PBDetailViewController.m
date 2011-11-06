@@ -16,6 +16,9 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize scrollView = _scrollView;
+@synthesize imageView = _imageView;
+@synthesize progressView = _progressView;
 
 #pragma mark - Managing the detail item
 
@@ -23,7 +26,7 @@
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
+        [_detailItem.image setDelegate:self];
         // Update the view.
         [self configureView];
     }
@@ -34,7 +37,20 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        //[self.imageView setImage:self.detailItem.image.photoImage];
+        [self.progressView setAlpha:1.0f];
+        [self.detailItem.image loadPhotoImage];
+        [self.imageView setImage:self.detailItem.image.photoThumbnail];
+        [self.scrollView setContentSize:self.imageView.bounds.size];
+        self.detailDescriptionLabel.text = [NSString stringWithFormat:@"Loading %@",self.detailItem.image.imageTitle];
+        self.title = self.detailItem.image.imageTitle;
+        [UIView animateWithDuration:3.0f 
+                              delay:20.0f 
+                            options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear) 
+                         animations:^{
+            [self.detailDescriptionLabel setAlpha:0.0f];
+        } 
+                         completion:nil];
     }
 }
 
@@ -57,7 +73,7 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    self.imageView.image = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,7 +99,20 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark-
+#pragma mark Begin PBImageLoadingProtocol methods
+
+- (void)imageLoadedSuccessfully:(PBImage *)image
+{
+    [self.imageView setImage:self.detailItem.image.photoImage];
+    [self.imageView setNeedsDisplay];
+    [self.progressView setAlpha:0.0f];
+}
+
+#pragma mark-
+#pragma mark End PBImageLoadingProtocol methods
 
 @end

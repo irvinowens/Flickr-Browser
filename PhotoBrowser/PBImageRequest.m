@@ -10,4 +10,11 @@
 
 @implementation PBImageRequest
 
+@synthesize imageRequestType;
+
+- (void)dealloc
+{
+    self.delegate = nil;
+}
+
 @end

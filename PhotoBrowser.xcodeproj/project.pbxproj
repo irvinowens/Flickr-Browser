@@ -52,12 +52,14 @@
 		7EC42B781464F0D700844DE3 /* PBFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B761464F0D700844DE3 /* PBFeedRequest.m */; };
 		7EC42B7B1464F0EB00844DE3 /* PBImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B7A1464F0EB00844DE3 /* PBImageRequest.m */; };
 		7EC42B7C1464F0EB00844DE3 /* PBImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B7A1464F0EB00844DE3 /* PBImageRequest.m */; };
-		7EC42B801464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B7F1464F3AF00844DE3 /* PBMultiThumbnailCell.m */; };
-		7EC42B811464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B7F1464F3AF00844DE3 /* PBMultiThumbnailCell.m */; };
 		7EC42B841464F3D600844DE3 /* PBDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B831464F3D600844DE3 /* PBDataProvider.m */; };
 		7EC42B851464F3D600844DE3 /* PBDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B831464F3D600844DE3 /* PBDataProvider.m */; };
 		7EC42B881464F40600844DE3 /* PBRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B871464F40600844DE3 /* PBRequestDelegate.m */; };
 		7EC42B891464F40600844DE3 /* PBRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B871464F40600844DE3 /* PBRequestDelegate.m */; };
+		7EC42B941465FE7C00844DE3 /* PBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B931465FE7C00844DE3 /* PBCustomCell.m */; };
+		7EC42B951465FE7C00844DE3 /* PBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC42B931465FE7C00844DE3 /* PBCustomCell.m */; };
+		7EC42B97146617B800844DE3 /* 377621-sil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC42B96146617B800844DE3 /* 377621-sil.png */; };
+		7EC42B98146617B800844DE3 /* 377621-sil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC42B96146617B800844DE3 /* 377621-sil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,18 +121,19 @@
 		7EC42B6A1464E9BE00844DE3 /* PBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBImage.m; path = PhotoBrowser/PBImage.m; sourceTree = "<group>"; };
 		7EC42B6D1464EADA00844DE3 /* PBFlickrPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFlickrPicture.h; path = PhotoBrowser/PBFlickrPicture.h; sourceTree = "<group>"; };
 		7EC42B6E1464EADA00844DE3 /* PBFlickrPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFlickrPicture.m; path = PhotoBrowser/PBFlickrPicture.m; sourceTree = "<group>"; };
-		7EC42B711464F0C500844DE3 /* PBRequestConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; name = PBRequestConnection.h; path = PhotoBrowser/PBRequestConnection.h; sourceTree = "<group>"; };
+		7EC42B711464F0C500844DE3 /* PBRequestConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBRequestConnection.h; path = PhotoBrowser/PBRequestConnection.h; sourceTree = "<group>"; };
 		7EC42B721464F0C500844DE3 /* PBRequestConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRequestConnection.m; path = PhotoBrowser/PBRequestConnection.m; sourceTree = "<group>"; };
 		7EC42B751464F0D700844DE3 /* PBFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFeedRequest.h; path = PhotoBrowser/PBFeedRequest.h; sourceTree = "<group>"; };
 		7EC42B761464F0D700844DE3 /* PBFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFeedRequest.m; path = PhotoBrowser/PBFeedRequest.m; sourceTree = "<group>"; };
 		7EC42B791464F0EB00844DE3 /* PBImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBImageRequest.h; path = PhotoBrowser/PBImageRequest.h; sourceTree = "<group>"; };
 		7EC42B7A1464F0EB00844DE3 /* PBImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBImageRequest.m; path = PhotoBrowser/PBImageRequest.m; sourceTree = "<group>"; };
-		7EC42B7E1464F3AF00844DE3 /* PBMultiThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMultiThumbnailCell.h; sourceTree = "<group>"; };
-		7EC42B7F1464F3AF00844DE3 /* PBMultiThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBMultiThumbnailCell.m; sourceTree = "<group>"; };
 		7EC42B821464F3D600844DE3 /* PBDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBDataProvider.h; path = PhotoBrowser/PBDataProvider.h; sourceTree = "<group>"; };
 		7EC42B831464F3D600844DE3 /* PBDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBDataProvider.m; path = PhotoBrowser/PBDataProvider.m; sourceTree = "<group>"; };
 		7EC42B861464F40600844DE3 /* PBRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBRequestDelegate.h; path = PhotoBrowser/PBRequestDelegate.h; sourceTree = "<group>"; };
 		7EC42B871464F40600844DE3 /* PBRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRequestDelegate.m; path = PhotoBrowser/PBRequestDelegate.m; sourceTree = "<group>"; };
+		7EC42B921465FE7B00844DE3 /* PBCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCustomCell.h; sourceTree = "<group>"; };
+		7EC42B931465FE7C00844DE3 /* PBCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBCustomCell.m; sourceTree = "<group>"; };
+		7EC42B96146617B800844DE3 /* 377621-sil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "377621-sil.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +203,7 @@
 		7EC42B011462F8D200844DE3 /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				7EC42B7D1464F38000844DE3 /* Custom Cell */,
+				7EC42B96146617B800844DE3 /* 377621-sil.png */,
 				7EC42B0A1462F8D200844DE3 /* PBAppDelegate.h */,
 				7EC42B0B1462F8D200844DE3 /* PBAppDelegate.m */,
 				7EC42B0D1462F8D200844DE3 /* MainStoryboard.storyboard */,
@@ -210,6 +213,8 @@
 				7EC42B171462F8D200844DE3 /* PBDetailViewController.m */,
 				7EC42B101462F8D200844DE3 /* PhotoBrowser.xcdatamodeld */,
 				7EC42B021462F8D200844DE3 /* Supporting Files */,
+				7EC42B921465FE7B00844DE3 /* PBCustomCell.h */,
+				7EC42B931465FE7C00844DE3 /* PBCustomCell.m */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -337,15 +342,6 @@
 			name = Providers;
 			sourceTree = "<group>";
 		};
-		7EC42B7D1464F38000844DE3 /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7EC42B7E1464F3AF00844DE3 /* PBMultiThumbnailCell.h */,
-				7EC42B7F1464F3AF00844DE3 /* PBMultiThumbnailCell.m */,
-			);
-			name = "Custom Cell";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,6 +414,7 @@
 			files = (
 				7EC42B061462F8D200844DE3 /* InfoPlist.strings in Resources */,
 				7EC42B0F1462F8D200844DE3 /* MainStoryboard.storyboard in Resources */,
+				7EC42B97146617B800844DE3 /* 377621-sil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EC42B2B1462F8D200844DE3 /* InfoPlist.strings in Resources */,
+				7EC42B98146617B800844DE3 /* 377621-sil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +469,9 @@
 				7EC42B731464F0C500844DE3 /* PBRequestConnection.m in Sources */,
 				7EC42B771464F0D700844DE3 /* PBFeedRequest.m in Sources */,
 				7EC42B7B1464F0EB00844DE3 /* PBImageRequest.m in Sources */,
-				7EC42B801464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */,
 				7EC42B841464F3D600844DE3 /* PBDataProvider.m in Sources */,
 				7EC42B881464F40600844DE3 /* PBRequestDelegate.m in Sources */,
+				7EC42B941465FE7C00844DE3 /* PBCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,9 +493,9 @@
 				7EC42B741464F0C500844DE3 /* PBRequestConnection.m in Sources */,
 				7EC42B781464F0D700844DE3 /* PBFeedRequest.m in Sources */,
 				7EC42B7C1464F0EB00844DE3 /* PBImageRequest.m in Sources */,
-				7EC42B811464F3AF00844DE3 /* PBMultiThumbnailCell.m in Sources */,
 				7EC42B851464F3D600844DE3 /* PBDataProvider.m in Sources */,
 				7EC42B891464F40600844DE3 /* PBRequestDelegate.m in Sources */,
+				7EC42B951465FE7C00844DE3 /* PBCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
