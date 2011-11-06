@@ -203,7 +203,6 @@
 		7EC42B011462F8D200844DE3 /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				7EC42B96146617B800844DE3 /* 377621-sil.png */,
 				7EC42B0A1462F8D200844DE3 /* PBAppDelegate.h */,
 				7EC42B0B1462F8D200844DE3 /* PBAppDelegate.m */,
 				7EC42B0D1462F8D200844DE3 /* MainStoryboard.storyboard */,
@@ -222,6 +221,7 @@
 		7EC42B021462F8D200844DE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7EC42B96146617B800844DE3 /* 377621-sil.png */,
 				7EC42B031462F8D200844DE3 /* PhotoBrowser-Info.plist */,
 				7EC42B041462F8D200844DE3 /* InfoPlist.strings */,
 				7EC42B071462F8D200844DE3 /* main.m */,

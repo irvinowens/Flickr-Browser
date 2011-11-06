@@ -60,7 +60,7 @@
     }
     if([self.delegate respondsToSelector:@selector(imageLoadedSuccessfully:)])
     {
-        [self.delegate performSelector:@selector(imageLoadedSuccessfully:) withObject:self];
+        [self.delegate performSelectorOnMainThread:@selector(imageLoadedSuccessfully:) withObject:self waitUntilDone:YES];
     }
 }
 

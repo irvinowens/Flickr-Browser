@@ -40,12 +40,10 @@
         //[self.imageView setImage:self.detailItem.image.photoImage];
         [self.progressView setAlpha:1.0f];
         [self.detailItem.image loadPhotoImage];
-        [self.imageView setImage:self.detailItem.image.photoThumbnail];
-        [self.scrollView setContentSize:self.imageView.bounds.size];
         self.detailDescriptionLabel.text = [NSString stringWithFormat:@"Loading %@",self.detailItem.image.imageTitle];
         self.title = self.detailItem.image.imageTitle;
         [UIView animateWithDuration:3.0f 
-                              delay:20.0f 
+                              delay:5.0f 
                             options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear) 
                          animations:^{
             [self.detailDescriptionLabel setAlpha:0.0f];
@@ -83,6 +81,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [self.imageView setImage:self.detailItem.image.photoThumbnail];
     [super viewDidAppear:animated];
 }
 
