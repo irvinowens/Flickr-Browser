@@ -1,0 +1,128 @@
+\hypertarget{interface_p_b_data_provider}{
+\section{PBDataProvider Class Reference}
+\label{interface_p_b_data_provider}\index{PBDataProvider@{PBDataProvider}}
+}
+
+
+{\ttfamily \#import $<$PBDataProvider.h$>$}
+
+Inheritance diagram for PBDataProvider:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{interface_p_b_data_provider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_b_data_provider_a3acc1d48d6270ed90a9700c024994d98}{updateDataWithPullFromFeed}
+\item 
+(NSMutableArray $\ast$) -\/ \hyperlink{interface_p_b_data_provider_aa087e818d083884b3244df839cfcf2b2}{returnArrayOfModelObjectForGivenXmlFeedString:}
+\item 
+(\hyperlink{interface_p_b_author}{PBAuthor} $\ast$) -\/ \hyperlink{interface_p_b_data_provider_ab4f175fcbd505518c33cd0b2b6686a98}{getAuthorModelForAuthorXmlNode:}
+\item 
+(\hyperlink{interface_p_b_image}{PBImage} $\ast$) -\/ \hyperlink{interface_p_b_data_provider_a550f8f74323fc7a204620dfff3bc8183}{getImageModelForEntryXmlNode:}
+\item 
+(NSMutableArray $\ast$) -\/ \hyperlink{interface_p_b_data_provider_a129757ab9da93b336fd706ada8ce639d}{divideModelArrayIntoNestedArraysForThumbnailView:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_p_b_data_provider_aa5a04b738e7467fb33e515fe70e8377f}{convertFlickrLargerImageUriToThumbnailImageUri:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSDateFormatter $\ast$ \hyperlink{interface_p_b_data_provider_a148f8968959e9479440e1603022bc162}{fmat}
+\item 
+\hyperlink{interface_p_b_request_connection}{PBRequestConnection} $\ast$ \hyperlink{interface_p_b_data_provider_aeb946996c2b8bff6715ae772cd39fe48}{req}
+\item 
+id$<$ \hyperlink{protocol_p_b_data_provider_consumer_protocol-p}{PBDataProviderConsumerProtocol} $>$ \hyperlink{interface_p_b_data_provider_a68117050d352cc1b3a3ad6267d45ed39}{delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The purpose of the data provider is to return high level collections of data from a given data source 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_p_b_data_provider_aa5a04b738e7467fb33e515fe70e8377f}{
+\index{PBDataProvider@{PBDataProvider}!convertFlickrLargerImageUriToThumbnailImageUri:@{convertFlickrLargerImageUriToThumbnailImageUri:}}
+\index{convertFlickrLargerImageUriToThumbnailImageUri:@{convertFlickrLargerImageUriToThumbnailImageUri:}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{convertFlickrLargerImageUriToThumbnailImageUri:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) convertFlickrLargerImageUriToThumbnailImageUri: ({\bf NSString} $\ast$) {\em largerImageUri}}}
+\label{interface_p_b_data_provider_aa5a04b738e7467fb33e515fe70e8377f}
+Get Flickr thumbnail URI from feed larger image uri 
+\begin{DoxyParams}{Parameters}
+\item[{\em (NSString}]$\ast$)largerImageUri The image URI for the larger image \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image string featuring the thumbnail uri 
+\end{DoxyReturn}
+\hypertarget{interface_p_b_data_provider_a129757ab9da93b336fd706ada8ce639d}{
+\index{PBDataProvider@{PBDataProvider}!divideModelArrayIntoNestedArraysForThumbnailView:@{divideModelArrayIntoNestedArraysForThumbnailView:}}
+\index{divideModelArrayIntoNestedArraysForThumbnailView:@{divideModelArrayIntoNestedArraysForThumbnailView:}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{divideModelArrayIntoNestedArraysForThumbnailView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSMutableArray $\ast$) divideModelArrayIntoNestedArraysForThumbnailView: (NSMutableArray $\ast$) {\em arr}}}
+\label{interface_p_b_data_provider_a129757ab9da93b336fd706ada8ce639d}
+Assuming a thumbnail table view, break the array of entities into subdivided array of subarrays 
+\begin{DoxyParams}{Parameters}
+\item[{\em (NSMutableArray}]$\ast$)arr The array to cut up \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A mutable array of arrays containing four image thumbnails 
+\end{DoxyReturn}
+\hypertarget{interface_p_b_data_provider_ab4f175fcbd505518c33cd0b2b6686a98}{
+\index{PBDataProvider@{PBDataProvider}!getAuthorModelForAuthorXmlNode:@{getAuthorModelForAuthorXmlNode:}}
+\index{getAuthorModelForAuthorXmlNode:@{getAuthorModelForAuthorXmlNode:}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{getAuthorModelForAuthorXmlNode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf PBAuthor} $\ast$) getAuthorModelForAuthorXmlNode: ({\bf DDXMLElement} $\ast$) {\em entryElement}}}
+\label{interface_p_b_data_provider_ab4f175fcbd505518c33cd0b2b6686a98}
+Given an author xml node populate an author object and return it 
+\begin{DoxyParams}{Parameters}
+\item[{\em (DDXMLElement}]$\ast$)entryElement The entry xml node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The author model instance 
+\end{DoxyReturn}
+\hypertarget{interface_p_b_data_provider_a550f8f74323fc7a204620dfff3bc8183}{
+\index{PBDataProvider@{PBDataProvider}!getImageModelForEntryXmlNode:@{getImageModelForEntryXmlNode:}}
+\index{getImageModelForEntryXmlNode:@{getImageModelForEntryXmlNode:}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{getImageModelForEntryXmlNode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf PBImage} $\ast$) getImageModelForEntryXmlNode: ({\bf DDXMLElement} $\ast$) {\em entryElement}}}
+\label{interface_p_b_data_provider_a550f8f74323fc7a204620dfff3bc8183}
+Given the entry xml node, get an instance of the image model and return it 
+\begin{DoxyParams}{Parameters}
+\item[{\em (DDXMLElement}]$\ast$)entryElement The entry xml element \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image model instance 
+\end{DoxyReturn}
+\hypertarget{interface_p_b_data_provider_aa087e818d083884b3244df839cfcf2b2}{
+\index{PBDataProvider@{PBDataProvider}!returnArrayOfModelObjectForGivenXmlFeedString:@{returnArrayOfModelObjectForGivenXmlFeedString:}}
+\index{returnArrayOfModelObjectForGivenXmlFeedString:@{returnArrayOfModelObjectForGivenXmlFeedString:}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{returnArrayOfModelObjectForGivenXmlFeedString:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSMutableArray $\ast$) returnArrayOfModelObjectForGivenXmlFeedString: ({\bf DDXMLDocument} $\ast$) {\em feed}}}
+\label{interface_p_b_data_provider_aa087e818d083884b3244df839cfcf2b2}
+Provided with an xml string, return an array of objects representing the items in the feed 
+\begin{DoxyParams}{Parameters}
+\item[{\em (DDXMLDocument}]$\ast$)feed The XML feed to parse into domain objects \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mutable array of objects 
+\end{DoxyReturn}
+\hypertarget{interface_p_b_data_provider_a3acc1d48d6270ed90a9700c024994d98}{
+\index{PBDataProvider@{PBDataProvider}!updateDataWithPullFromFeed@{updateDataWithPullFromFeed}}
+\index{updateDataWithPullFromFeed@{updateDataWithPullFromFeed}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{updateDataWithPullFromFeed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) updateDataWithPullFromFeed }}
+\label{interface_p_b_data_provider_a3acc1d48d6270ed90a9700c024994d98}
+Kickstart updating the data provider delegate with new data from the feed 
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_b_data_provider_a68117050d352cc1b3a3ad6267d45ed39}{
+\index{PBDataProvider@{PBDataProvider}!delegate@{delegate}}
+\index{delegate@{delegate}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<$ {\bf PBDataProviderConsumerProtocol} $>$) delegate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_data_provider_a68117050d352cc1b3a3ad6267d45ed39}
+\hypertarget{interface_p_b_data_provider_a148f8968959e9479440e1603022bc162}{
+\index{PBDataProvider@{PBDataProvider}!fmat@{fmat}}
+\index{fmat@{fmat}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{fmat}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDateFormatter $\ast$) fmat\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_data_provider_a148f8968959e9479440e1603022bc162}
+\hypertarget{interface_p_b_data_provider_aeb946996c2b8bff6715ae772cd39fe48}{
+\index{PBDataProvider@{PBDataProvider}!req@{req}}
+\index{req@{req}!PBDataProvider@{PBDataProvider}}
+\subsubsection[{req}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf PBRequestConnection} $\ast$) req\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_data_provider_aeb946996c2b8bff6715ae772cd39fe48}
+We want to hold onto the request for the lifecycle of the processing 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_data_provider_8h}{PBDataProvider.h}\item 
+PhotoBrowser/\hyperlink{_p_b_data_provider_8m}{PBDataProvider.m}\end{DoxyCompactItemize}

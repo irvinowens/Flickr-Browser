@@ -1,0 +1,482 @@
+\hypertarget{interface_d_d_x_m_l_node}{
+\section{DDXMLNode Class Reference}
+\label{interface_d_d_x_m_l_node}\index{DDXMLNode@{DDXMLNode}}
+}
+
+
+{\ttfamily \#import $<$DDXMLNode.h$>$}
+
+Inheritance diagram for DDXMLNode:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.3913cm]{interface_d_d_x_m_l_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_d_d_x_m_l_node_8h_aeb91775383bcc3650dbe0a4c4e6ed34f}{DDXMLNodeKind}) -\/ \hyperlink{interface_d_d_x_m_l_node_aefa0bcc90734c31b81a56d388a75153f}{kind}
+\item 
+(void) -\/ \hyperlink{interface_d_d_x_m_l_node_a9ee5517d51908f1d712a4e2d984c2eec}{setName:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_ac6691947ac2050dd45d083b4b998dada}{name}
+\item 
+(void) -\/ \hyperlink{interface_d_d_x_m_l_node_a35a225a0a17eae1a86b0d06b687d3668}{setStringValue:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a257a532dc9b7a9ef7f77b06a656a9731}{stringValue}
+\item 
+(NSUInteger) -\/ \hyperlink{interface_d_d_x_m_l_node_a2b0a9c913172821c74764b2403e7bf50}{index}
+\item 
+(NSUInteger) -\/ \hyperlink{interface_d_d_x_m_l_node_aac2adefe918414f4636cc9e5b0a6674b}{level}
+\item 
+(\hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_ab6376a8dd156c92e9232030a9c935288}{rootDocument}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a0ea596994e3787a56d446ced9a4bbde5}{parent}
+\item 
+(NSUInteger) -\/ \hyperlink{interface_d_d_x_m_l_node_a382fcc5d092839b8a2e781757bbbd37e}{childCount}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a6c82ff646ccba5d28cb9f2ae265d2b78}{children}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a1f77364974965186d1909e491eda70cd}{childAtIndex:}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_addfaf9016ec3ab048015d4c0365a7ddc}{previousSibling}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_ac053327838d3cf23d58aef5c7dc256d1}{nextSibling}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a151917d2fb07c320f077c1acdc4cf71a}{previousNode}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_ace05da71f9b1b94133e38686a7bbb7d4}{nextNode}
+\item 
+(void) -\/ \hyperlink{interface_d_d_x_m_l_node_ac295bade8aee589f6718dfa79edc2a34}{detach}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_ae6f6f5b9a5e69082c41d33d0673a4d77}{XPath}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a9c6a025be051605ccfceba0c2cf54f1b}{localName}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a01540efc4fbe56575bd74239b7126afd}{prefix}
+\item 
+(void) -\/ \hyperlink{interface_d_d_x_m_l_node_aaebbd1bfc9e1555b41d7fdccc4d872a0}{setURI:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a3fbf2d9d05fea4573b43b2f7b6cd0208}{URI}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a0920dc7935061bc57daab91706be5934}{description}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a0490ce113e7d25543791057857fe07f9}{XMLString}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_aae8fe9aae42dc70a3c55fb98687ab236}{XMLStringWithOptions:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_node_a581a4349c65c2a2ba29c0d7b75985c42}{nodesForXPath:error:}
+\item 
+(id) -\/ \hyperlink{interface_d_d_x_m_l_node_a56e1f1d1d6a34bc90648dceb2fdb718b}{initWithPrimitive:owner:}
+\item 
+(BOOL) -\/ \hyperlink{interface_d_d_x_m_l_node_ad2a268334c965522d4908199b466c7f4}{\_\-hasParent}
+\item 
+(BOOL) -\/ \hyperlink{interface_d_d_x_m_l_node_a6bbe4983c77d3c5d9197895a8770eac7}{DDXMLIsZombie}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_aaea92de2679baf763932f2075bd8db12}{elementWithName:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_a9fabfeebb22f8b427e6a976ab2c3d625}{elementWithName:URI:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_ab8dd8ebe7d7c13927dd257570f80f2b6}{elementWithName:stringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_aacda036caa07cd4eee6f813b5d251c21}{elementWithName:children:attributes:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_ad259be5957c407c91949c8606768ee37}{attributeWithName:stringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_a96e358faed5b3c909c3162226c5b7500}{attributeWithName:URI:stringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_a97159cf9427dc79009077cc54ac1ed02}{namespaceWithName:stringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_ac805cf665dc5ccf11548d7b3376fda5d}{processingInstructionWithName:stringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_acf691f4fb6bc6e8db45f8d9d0ba34cd9}{commentWithStringValue:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_a9f06d71004107da39a2f63da7fc5b171}{textWithStringValue:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) + \hyperlink{interface_d_d_x_m_l_node_a14a69609e4e5c4dc0784e4b757898734}{localNameForName:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) + \hyperlink{interface_d_d_x_m_l_node_ac060fc67432ead9ad7fdb7588befd764}{prefixForName:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_abbdfa9bfb84ba1797d895d0ffb0d39a0}{nodeWithUnknownPrimitive:owner:}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_node_afbf910905e6f2be87c284bc14a09ad22}{nodeWithPrimitive:owner:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a45d00d44dbed4f8089c33260b53325dd}{getHasPrefix:localName:forName:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a3c01d2642153cd923bc5580b8bb4c31c}{getPrefix:localName:forName:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a4abed6840ba68b0a939740babf671163}{recursiveStripDocPointersFromNode:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a7721e55c6e2125533f69e353c5aefca8}{detachNamespace:fromNode:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_ac9e1fd2544f1a4b61c4683e11aa45c0f}{removeNamespace:fromNode:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a0a1e3cd7e14ec669cec5b0628d6d1316}{removeAllNamespacesFromNode:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a034cf3aa3cb68afe5276a7592356720b}{detachAttribute:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a84d937c161bc7c31d790a19e9bcd06ec}{removeAttribute:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a3e908b895f562c51d968c82b2ef9a69f}{removeAllAttributesFromNode:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_abc6ca176ee793581ed00e564ac25b0af}{detachChild:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a833860cce70288388e4cb55ff06005ac}{removeChild:}
+\item 
+(void) + \hyperlink{interface_d_d_x_m_l_node_a5549749e17b84bd3c5bf3987e397e878}{removeAllChildrenFromNode:}
+\item 
+(NSError $\ast$) + \hyperlink{interface_d_d_x_m_l_node_a72e6e3d5a5b8f946d664cc07df70063d}{lastError}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__xml_kind}{\_\-xmlKind} $\ast$ \hyperlink{interface_d_d_x_m_l_node_a89c85618e7eeb82fbcc1c8fc710108f4}{genericPtr}
+\item 
+\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$ \hyperlink{interface_d_d_x_m_l_node_ad09259817961af0ab00be1047f23c363}{owner}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Welcome to KissXML.
+
+The project page has documentation if you have questions. \href{https://github.com/robbiehanson/KissXML}{\tt https://github.com/robbiehanson/KissXML}
+
+If you're new to the project you may wish to read the \char`\"{}Getting Started\char`\"{} wiki. \href{https://github.com/robbiehanson/KissXML/wiki/GettingStarted}{\tt https://github.com/robbiehanson/KissXML/wiki/GettingStarted}
+
+KissXML provides a drop-\/in replacement for Apple's NSXML class cluster. The goal is to get the exact same behavior as the NSXML classes.
+
+For API Reference, see Apple's excellent documentation, either via Xcode's Mac OS X documentation, or via the web:
+
+\href{https://github.com/robbiehanson/KissXML/wiki/Reference}{\tt https://github.com/robbiehanson/KissXML/wiki/Reference} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_d_d_x_m_l_node_ad2a268334c965522d4908199b466c7f4}{
+\index{DDXMLNode@{DDXMLNode}!\_\-hasParent@{\_\-hasParent}}
+\index{\_\-hasParent@{\_\-hasParent}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{\_\-hasParent}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) \_\-hasParent }}
+\label{interface_d_d_x_m_l_node_ad2a268334c965522d4908199b466c7f4}
+\hypertarget{interface_d_d_x_m_l_node_ad259be5957c407c91949c8606768ee37}{
+\index{DDXMLNode@{DDXMLNode}!attributeWithName:stringValue:@{attributeWithName:stringValue:}}
+\index{attributeWithName:stringValue:@{attributeWithName:stringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{attributeWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) attributeWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_ad259be5957c407c91949c8606768ee37}
+\hypertarget{interface_d_d_x_m_l_node_a96e358faed5b3c909c3162226c5b7500}{
+\index{DDXMLNode@{DDXMLNode}!attributeWithName:URI:stringValue:@{attributeWithName:URI:stringValue:}}
+\index{attributeWithName:URI:stringValue:@{attributeWithName:URI:stringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{attributeWithName:URI:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) attributeWithName: ({\bf NSString} $\ast$) {\em name}\/ URI: ({\bf NSString} $\ast$) {\em URI}\/ stringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_a96e358faed5b3c909c3162226c5b7500}
+\hypertarget{interface_d_d_x_m_l_node_a1f77364974965186d1909e491eda70cd}{
+\index{DDXMLNode@{DDXMLNode}!childAtIndex:@{childAtIndex:}}
+\index{childAtIndex:@{childAtIndex:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{childAtIndex:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) childAtIndex: (NSUInteger) {\em index}}}
+\label{interface_d_d_x_m_l_node_a1f77364974965186d1909e491eda70cd}
+Returns the child node of the receiver at the specified location. Returns a \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object or nil if the receiver has no children.
+
+If the receive has children and index is out of bounds, an exception is raised.
+
+The receiver should be a \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object representing a document, element, or document type declaration. The returned node object can represent an element, comment, text, or processing instruction. \hypertarget{interface_d_d_x_m_l_node_a382fcc5d092839b8a2e781757bbbd37e}{
+\index{DDXMLNode@{DDXMLNode}!childCount@{childCount}}
+\index{childCount@{childCount}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{childCount}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSUInteger) childCount }}
+\label{interface_d_d_x_m_l_node_a382fcc5d092839b8a2e781757bbbd37e}
+Returns the number of child nodes the receiver has. For performance reasons, use this method instead of getting the count from the array returned by children. \hypertarget{interface_d_d_x_m_l_node_a6c82ff646ccba5d28cb9f2ae265d2b78}{
+\index{DDXMLNode@{DDXMLNode}!children@{children}}
+\index{children@{children}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) children }}
+\label{interface_d_d_x_m_l_node_a6c82ff646ccba5d28cb9f2ae265d2b78}
+Returns an immutable array containing the child nodes of the receiver (as \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} objects). \hypertarget{interface_d_d_x_m_l_node_acf691f4fb6bc6e8db45f8d9d0ba34cd9}{
+\index{DDXMLNode@{DDXMLNode}!commentWithStringValue:@{commentWithStringValue:}}
+\index{commentWithStringValue:@{commentWithStringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{commentWithStringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) commentWithStringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_acf691f4fb6bc6e8db45f8d9d0ba34cd9}
+\hypertarget{interface_d_d_x_m_l_node_a6bbe4983c77d3c5d9197895a8770eac7}{
+\index{DDXMLNode@{DDXMLNode}!DDXMLIsZombie@{DDXMLIsZombie}}
+\index{DDXMLIsZombie@{DDXMLIsZombie}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{DDXMLIsZombie}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) DDXMLIsZombie (void $\ast$) {\em xmlPtr}\/  ({\bf DDXMLNode} $\ast$) {\em wrapper}}}
+\label{interface_d_d_x_m_l_node_a6bbe4983c77d3c5d9197895a8770eac7}
+\hypertarget{interface_d_d_x_m_l_node_a0920dc7935061bc57daab91706be5934}{
+\index{DDXMLNode@{DDXMLNode}!description@{description}}
+\index{description@{description}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) description }}
+\label{interface_d_d_x_m_l_node_a0920dc7935061bc57daab91706be5934}
+\hypertarget{interface_d_d_x_m_l_node_ac295bade8aee589f6718dfa79edc2a34}{
+\index{DDXMLNode@{DDXMLNode}!detach@{detach}}
+\index{detach@{detach}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{detach}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) detach }}
+\label{interface_d_d_x_m_l_node_ac295bade8aee589f6718dfa79edc2a34}
+Detaches the receiver from its parent node.
+
+This method is applicable to \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} objects representing elements, text, comments, processing instructions, attributes, and namespaces. Once the node object is detached, you can add it as a child node of another parent. \hypertarget{interface_d_d_x_m_l_node_a034cf3aa3cb68afe5276a7592356720b}{
+\index{DDXMLNode@{DDXMLNode}!detachAttribute:@{detachAttribute:}}
+\index{detachAttribute:@{detachAttribute:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{detachAttribute:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) detachAttribute: (xmlAttrPtr) {\em attr}}}
+\label{interface_d_d_x_m_l_node_a034cf3aa3cb68afe5276a7592356720b}
+\hypertarget{interface_d_d_x_m_l_node_abc6ca176ee793581ed00e564ac25b0af}{
+\index{DDXMLNode@{DDXMLNode}!detachChild:@{detachChild:}}
+\index{detachChild:@{detachChild:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{detachChild:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) detachChild: (xmlNodePtr) {\em child}}}
+\label{interface_d_d_x_m_l_node_abc6ca176ee793581ed00e564ac25b0af}
+\hypertarget{interface_d_d_x_m_l_node_a7721e55c6e2125533f69e353c5aefca8}{
+\index{DDXMLNode@{DDXMLNode}!detachNamespace:fromNode:@{detachNamespace:fromNode:}}
+\index{detachNamespace:fromNode:@{detachNamespace:fromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{detachNamespace:fromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) detachNamespace: (xmlNsPtr) {\em ns}\/ fromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_a7721e55c6e2125533f69e353c5aefca8}
+\hypertarget{interface_d_d_x_m_l_node_aaea92de2679baf763932f2075bd8db12}{
+\index{DDXMLNode@{DDXMLNode}!elementWithName:@{elementWithName:}}
+\index{elementWithName:@{elementWithName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{elementWithName:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) elementWithName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_aaea92de2679baf763932f2075bd8db12}
+\hypertarget{interface_d_d_x_m_l_node_aacda036caa07cd4eee6f813b5d251c21}{
+\index{DDXMLNode@{DDXMLNode}!elementWithName:children:attributes:@{elementWithName:children:attributes:}}
+\index{elementWithName:children:attributes:@{elementWithName:children:attributes:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{elementWithName:children:attributes:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) elementWithName: ({\bf NSString} $\ast$) {\em name}\/ children: (NSArray $\ast$) {\em children}\/ attributes: (NSArray $\ast$) {\em attributes}}}
+\label{interface_d_d_x_m_l_node_aacda036caa07cd4eee6f813b5d251c21}
+\hypertarget{interface_d_d_x_m_l_node_ab8dd8ebe7d7c13927dd257570f80f2b6}{
+\index{DDXMLNode@{DDXMLNode}!elementWithName:stringValue:@{elementWithName:stringValue:}}
+\index{elementWithName:stringValue:@{elementWithName:stringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{elementWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) elementWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em string}}}
+\label{interface_d_d_x_m_l_node_ab8dd8ebe7d7c13927dd257570f80f2b6}
+\hypertarget{interface_d_d_x_m_l_node_a9fabfeebb22f8b427e6a976ab2c3d625}{
+\index{DDXMLNode@{DDXMLNode}!elementWithName:URI:@{elementWithName:URI:}}
+\index{elementWithName:URI:@{elementWithName:URI:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{elementWithName:URI:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) elementWithName: ({\bf NSString} $\ast$) {\em name}\/ URI: ({\bf NSString} $\ast$) {\em URI}}}
+\label{interface_d_d_x_m_l_node_a9fabfeebb22f8b427e6a976ab2c3d625}
+\hypertarget{interface_d_d_x_m_l_node_a45d00d44dbed4f8089c33260b53325dd}{
+\index{DDXMLNode@{DDXMLNode}!getHasPrefix:localName:forName:@{getHasPrefix:localName:forName:}}
+\index{getHasPrefix:localName:forName:@{getHasPrefix:localName:forName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{getHasPrefix:localName:forName:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) getHasPrefix: (BOOL $\ast$) {\em hasPrefixPtr}\/ localName: ({\bf NSString} $\ast$$\ast$) {\em localNamePtr}\/ forName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_a45d00d44dbed4f8089c33260b53325dd}
+\hypertarget{interface_d_d_x_m_l_node_a3c01d2642153cd923bc5580b8bb4c31c}{
+\index{DDXMLNode@{DDXMLNode}!getPrefix:localName:forName:@{getPrefix:localName:forName:}}
+\index{getPrefix:localName:forName:@{getPrefix:localName:forName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{getPrefix:localName:forName:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) getPrefix: ({\bf NSString} $\ast$$\ast$) {\em prefixPtr}\/ localName: ({\bf NSString} $\ast$$\ast$) {\em localNamePtr}\/ forName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_a3c01d2642153cd923bc5580b8bb4c31c}
+\hypertarget{interface_d_d_x_m_l_node_a2b0a9c913172821c74764b2403e7bf50}{
+\index{DDXMLNode@{DDXMLNode}!index@{index}}
+\index{index@{index}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSUInteger) index }}
+\label{interface_d_d_x_m_l_node_a2b0a9c913172821c74764b2403e7bf50}
+Returns the index of the receiver identifying its position relative to its sibling nodes. The first child node of a parent has an index of zero. \hypertarget{interface_d_d_x_m_l_node_a56e1f1d1d6a34bc90648dceb2fdb718b}{
+\index{DDXMLNode@{DDXMLNode}!initWithPrimitive:owner:@{initWithPrimitive:owner:}}
+\index{initWithPrimitive:owner:@{initWithPrimitive:owner:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{initWithPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithPrimitive: ({\bf xmlKindPtr}) {\em kindPtr}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{interface_d_d_x_m_l_node_a56e1f1d1d6a34bc90648dceb2fdb718b}
+\hypertarget{interface_d_d_x_m_l_node_aefa0bcc90734c31b81a56d388a75153f}{
+\index{DDXMLNode@{DDXMLNode}!kind@{kind}}
+\index{kind@{kind}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNodeKind}) kind }}
+\label{interface_d_d_x_m_l_node_aefa0bcc90734c31b81a56d388a75153f}
+\hypertarget{interface_d_d_x_m_l_node_a72e6e3d5a5b8f946d664cc07df70063d}{
+\index{DDXMLNode@{DDXMLNode}!lastError@{lastError}}
+\index{lastError@{lastError}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{lastError}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSError $\ast$) lastError }}
+\label{interface_d_d_x_m_l_node_a72e6e3d5a5b8f946d664cc07df70063d}
+\hypertarget{interface_d_d_x_m_l_node_aac2adefe918414f4636cc9e5b0a6674b}{
+\index{DDXMLNode@{DDXMLNode}!level@{level}}
+\index{level@{level}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSUInteger) level }}
+\label{interface_d_d_x_m_l_node_aac2adefe918414f4636cc9e5b0a6674b}
+Returns the nesting level of the receiver within the tree hierarchy. The root element of a document has a nesting level of one. \hypertarget{interface_d_d_x_m_l_node_a9c6a025be051605ccfceba0c2cf54f1b}{
+\index{DDXMLNode@{DDXMLNode}!localName@{localName}}
+\index{localName@{localName}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{localName}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) localName }}
+\label{interface_d_d_x_m_l_node_a9c6a025be051605ccfceba0c2cf54f1b}
+Returns the local name of the receiver.
+
+The local name is the part of a node name that follows a namespace-\/qualifying colon or the full name if there is no colon. For example, “chapter” is the local name in the qualified name “acme:chapter”. \hypertarget{interface_d_d_x_m_l_node_a14a69609e4e5c4dc0784e4b757898734}{
+\index{DDXMLNode@{DDXMLNode}!localNameForName:@{localNameForName:}}
+\index{localNameForName:@{localNameForName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{localNameForName:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf NSString} $\ast$) localNameForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_a14a69609e4e5c4dc0784e4b757898734}
+Returns the local name from the specified qualified name.
+
+Examples: \char`\"{}a:node\char`\"{} -\/$>$ \char`\"{}node\char`\"{} \char`\"{}a:a:node\char`\"{} -\/$>$ \char`\"{}a:node\char`\"{} \char`\"{}node\char`\"{} -\/$>$ \char`\"{}node\char`\"{} nil -\/ $>$ nil \hypertarget{interface_d_d_x_m_l_node_ac6691947ac2050dd45d083b4b998dada}{
+\index{DDXMLNode@{DDXMLNode}!name@{name}}
+\index{name@{name}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) name }}
+\label{interface_d_d_x_m_l_node_ac6691947ac2050dd45d083b4b998dada}
+\hypertarget{interface_d_d_x_m_l_node_a97159cf9427dc79009077cc54ac1ed02}{
+\index{DDXMLNode@{DDXMLNode}!namespaceWithName:stringValue:@{namespaceWithName:stringValue:}}
+\index{namespaceWithName:stringValue:@{namespaceWithName:stringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{namespaceWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) namespaceWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_a97159cf9427dc79009077cc54ac1ed02}
+\hypertarget{interface_d_d_x_m_l_node_ace05da71f9b1b94133e38686a7bbb7d4}{
+\index{DDXMLNode@{DDXMLNode}!nextNode@{nextNode}}
+\index{nextNode@{nextNode}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{nextNode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) nextNode }}
+\label{interface_d_d_x_m_l_node_ace05da71f9b1b94133e38686a7bbb7d4}
+Returns the next \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object in document order.
+
+You use this method to “walk” forward through the tree structure representing an XML document or document section. (Use previousNode to traverse the tree in the opposite direction.) Document order is the natural order that XML constructs appear in markup text. If you send this message to the last node in the tree, nil is returned. \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} bypasses namespace and attribute nodes when it traverses a tree in document order. \hypertarget{interface_d_d_x_m_l_node_ac053327838d3cf23d58aef5c7dc256d1}{
+\index{DDXMLNode@{DDXMLNode}!nextSibling@{nextSibling}}
+\index{nextSibling@{nextSibling}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{nextSibling}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) nextSibling }}
+\label{interface_d_d_x_m_l_node_ac053327838d3cf23d58aef5c7dc256d1}
+Returns the next \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object that is a sibling node to the receiver.
+
+This object will have an index value that is one more than the receiver’s. If there are no more subsequent siblings (that is, other child nodes of the receiver’s parent) the method returns nil. \hypertarget{interface_d_d_x_m_l_node_a581a4349c65c2a2ba29c0d7b75985c42}{
+\index{DDXMLNode@{DDXMLNode}!nodesForXPath:error:@{nodesForXPath:error:}}
+\index{nodesForXPath:error:@{nodesForXPath:error:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{nodesForXPath:error:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) nodesForXPath: ({\bf NSString} $\ast$) {\em xpath}\/ error: (NSError $\ast$$\ast$) {\em error}}}
+\label{interface_d_d_x_m_l_node_a581a4349c65c2a2ba29c0d7b75985c42}
+\hypertarget{interface_d_d_x_m_l_node_afbf910905e6f2be87c284bc14a09ad22}{
+\index{DDXMLNode@{DDXMLNode}!nodeWithPrimitive:owner:@{nodeWithPrimitive:owner:}}
+\index{nodeWithPrimitive:owner:@{nodeWithPrimitive:owner:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{nodeWithPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) nodeWithPrimitive: ({\bf xmlKindPtr}) {\em kindPtr}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{interface_d_d_x_m_l_node_afbf910905e6f2be87c284bc14a09ad22}
+\hypertarget{interface_d_d_x_m_l_node_abbdfa9bfb84ba1797d895d0ffb0d39a0}{
+\index{DDXMLNode@{DDXMLNode}!nodeWithUnknownPrimitive:owner:@{nodeWithUnknownPrimitive:owner:}}
+\index{nodeWithUnknownPrimitive:owner:@{nodeWithUnknownPrimitive:owner:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{nodeWithUnknownPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) nodeWithUnknownPrimitive: ({\bf xmlKindPtr}) {\em kindPtr}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{interface_d_d_x_m_l_node_abbdfa9bfb84ba1797d895d0ffb0d39a0}
+\hypertarget{interface_d_d_x_m_l_node_a0ea596994e3787a56d446ced9a4bbde5}{
+\index{DDXMLNode@{DDXMLNode}!parent@{parent}}
+\index{parent@{parent}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) parent }}
+\label{interface_d_d_x_m_l_node_a0ea596994e3787a56d446ced9a4bbde5}
+Returns the parent node of the receiver.
+
+Document nodes and standalone nodes (that is, the root of a detached branch of a tree) have no parent, and sending this message to them returns nil. A one-\/to-\/one relationship does not always exists between a parent and its children; although a namespace or attribute node cannot be a child, it still has a parent element. \hypertarget{interface_d_d_x_m_l_node_a01540efc4fbe56575bd74239b7126afd}{
+\index{DDXMLNode@{DDXMLNode}!prefix@{prefix}}
+\index{prefix@{prefix}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{prefix}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) prefix }}
+\label{interface_d_d_x_m_l_node_a01540efc4fbe56575bd74239b7126afd}
+Returns the prefix of the receiver’s name.
+
+The prefix is the part of a namespace-\/qualified name that precedes the colon. For example, “acme” is the local name in the qualified name “acme:chapter”. This method returns an empty string if the receiver’s name is not qualified by a namespace. \hypertarget{interface_d_d_x_m_l_node_ac060fc67432ead9ad7fdb7588befd764}{
+\index{DDXMLNode@{DDXMLNode}!prefixForName:@{prefixForName:}}
+\index{prefixForName:@{prefixForName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{prefixForName:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf NSString} $\ast$) prefixForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_ac060fc67432ead9ad7fdb7588befd764}
+Extracts the prefix from the given name. If name is nil, or has no prefix, an empty string is returned.
+
+Examples: \char`\"{}a:deusty.com\char`\"{} -\/$>$ \char`\"{}a\char`\"{} \char`\"{}a:a:deusty.com\char`\"{} -\/$>$ \char`\"{}a\char`\"{} \char`\"{}node\char`\"{} -\/$>$ \char`\"{}\char`\"{} nil -\/$>$ \char`\"{}\char`\"{} \hypertarget{interface_d_d_x_m_l_node_a151917d2fb07c320f077c1acdc4cf71a}{
+\index{DDXMLNode@{DDXMLNode}!previousNode@{previousNode}}
+\index{previousNode@{previousNode}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{previousNode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) previousNode }}
+\label{interface_d_d_x_m_l_node_a151917d2fb07c320f077c1acdc4cf71a}
+Returns the previous \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object in document order.
+
+You use this method to “walk” backward through the tree structure representing an XML document or document section. (Use nextNode to traverse the tree in the opposite direction.) Document order is the natural order that XML constructs appear in markup text. If you send this message to the first node in the tree (that is, the root element), nil is returned. \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} bypasses namespace and attribute nodes when it traverses a tree in document order. \hypertarget{interface_d_d_x_m_l_node_addfaf9016ec3ab048015d4c0365a7ddc}{
+\index{DDXMLNode@{DDXMLNode}!previousSibling@{previousSibling}}
+\index{previousSibling@{previousSibling}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{previousSibling}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) previousSibling }}
+\label{interface_d_d_x_m_l_node_addfaf9016ec3ab048015d4c0365a7ddc}
+Returns the previous \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} object that is a sibling node to the receiver.
+
+This object will have an index value that is one less than the receiver’s. If there are no more previous siblings (that is, other child nodes of the receiver’s parent) the method returns nil. \hypertarget{interface_d_d_x_m_l_node_ac805cf665dc5ccf11548d7b3376fda5d}{
+\index{DDXMLNode@{DDXMLNode}!processingInstructionWithName:stringValue:@{processingInstructionWithName:stringValue:}}
+\index{processingInstructionWithName:stringValue:@{processingInstructionWithName:stringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{processingInstructionWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) processingInstructionWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_ac805cf665dc5ccf11548d7b3376fda5d}
+\hypertarget{interface_d_d_x_m_l_node_a4abed6840ba68b0a939740babf671163}{
+\index{DDXMLNode@{DDXMLNode}!recursiveStripDocPointersFromNode:@{recursiveStripDocPointersFromNode:}}
+\index{recursiveStripDocPointersFromNode:@{recursiveStripDocPointersFromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{recursiveStripDocPointersFromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) recursiveStripDocPointersFromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_a4abed6840ba68b0a939740babf671163}
+\hypertarget{interface_d_d_x_m_l_node_a3e908b895f562c51d968c82b2ef9a69f}{
+\index{DDXMLNode@{DDXMLNode}!removeAllAttributesFromNode:@{removeAllAttributesFromNode:}}
+\index{removeAllAttributesFromNode:@{removeAllAttributesFromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeAllAttributesFromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeAllAttributesFromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_a3e908b895f562c51d968c82b2ef9a69f}
+\hypertarget{interface_d_d_x_m_l_node_a5549749e17b84bd3c5bf3987e397e878}{
+\index{DDXMLNode@{DDXMLNode}!removeAllChildrenFromNode:@{removeAllChildrenFromNode:}}
+\index{removeAllChildrenFromNode:@{removeAllChildrenFromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeAllChildrenFromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeAllChildrenFromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_a5549749e17b84bd3c5bf3987e397e878}
+\hypertarget{interface_d_d_x_m_l_node_a0a1e3cd7e14ec669cec5b0628d6d1316}{
+\index{DDXMLNode@{DDXMLNode}!removeAllNamespacesFromNode:@{removeAllNamespacesFromNode:}}
+\index{removeAllNamespacesFromNode:@{removeAllNamespacesFromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeAllNamespacesFromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeAllNamespacesFromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_a0a1e3cd7e14ec669cec5b0628d6d1316}
+\hypertarget{interface_d_d_x_m_l_node_a84d937c161bc7c31d790a19e9bcd06ec}{
+\index{DDXMLNode@{DDXMLNode}!removeAttribute:@{removeAttribute:}}
+\index{removeAttribute:@{removeAttribute:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeAttribute:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeAttribute: (xmlAttrPtr) {\em attr}}}
+\label{interface_d_d_x_m_l_node_a84d937c161bc7c31d790a19e9bcd06ec}
+\hypertarget{interface_d_d_x_m_l_node_a833860cce70288388e4cb55ff06005ac}{
+\index{DDXMLNode@{DDXMLNode}!removeChild:@{removeChild:}}
+\index{removeChild:@{removeChild:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeChild:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeChild: (xmlNodePtr) {\em child}}}
+\label{interface_d_d_x_m_l_node_a833860cce70288388e4cb55ff06005ac}
+\hypertarget{interface_d_d_x_m_l_node_ac9e1fd2544f1a4b61c4683e11aa45c0f}{
+\index{DDXMLNode@{DDXMLNode}!removeNamespace:fromNode:@{removeNamespace:fromNode:}}
+\index{removeNamespace:fromNode:@{removeNamespace:fromNode:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{removeNamespace:fromNode:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) removeNamespace: (xmlNsPtr) {\em ns}\/ fromNode: (xmlNodePtr) {\em node}}}
+\label{interface_d_d_x_m_l_node_ac9e1fd2544f1a4b61c4683e11aa45c0f}
+\hypertarget{interface_d_d_x_m_l_node_ab6376a8dd156c92e9232030a9c935288}{
+\index{DDXMLNode@{DDXMLNode}!rootDocument@{rootDocument}}
+\index{rootDocument@{rootDocument}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{rootDocument}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLDocument} $\ast$) rootDocument }}
+\label{interface_d_d_x_m_l_node_ab6376a8dd156c92e9232030a9c935288}
+Returns the \hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} object containing the root element and representing the XML document as a whole. If the receiver is a standalone node (that is, a node at the head of a detached branch of the tree), this method returns nil. \hypertarget{interface_d_d_x_m_l_node_a9ee5517d51908f1d712a4e2d984c2eec}{
+\index{DDXMLNode@{DDXMLNode}!setName:@{setName:}}
+\index{setName:@{setName:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{setName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setName: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_d_d_x_m_l_node_a9ee5517d51908f1d712a4e2d984c2eec}
+\hypertarget{interface_d_d_x_m_l_node_a35a225a0a17eae1a86b0d06b687d3668}{
+\index{DDXMLNode@{DDXMLNode}!setStringValue:@{setStringValue:}}
+\index{setStringValue:@{setStringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{setStringValue:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setStringValue: ({\bf NSString} $\ast$) {\em string}}}
+\label{interface_d_d_x_m_l_node_a35a225a0a17eae1a86b0d06b687d3668}
+\hypertarget{interface_d_d_x_m_l_node_aaebbd1bfc9e1555b41d7fdccc4d872a0}{
+\index{DDXMLNode@{DDXMLNode}!setURI:@{setURI:}}
+\index{setURI:@{setURI:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{setURI:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setURI: ({\bf NSString} $\ast$) {\em URI}}}
+\label{interface_d_d_x_m_l_node_aaebbd1bfc9e1555b41d7fdccc4d872a0}
+Sets the URI identifying the source of this document. Pass nil to remove the current URI. \hypertarget{interface_d_d_x_m_l_node_a257a532dc9b7a9ef7f77b06a656a9731}{
+\index{DDXMLNode@{DDXMLNode}!stringValue@{stringValue}}
+\index{stringValue@{stringValue}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{stringValue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) stringValue }}
+\label{interface_d_d_x_m_l_node_a257a532dc9b7a9ef7f77b06a656a9731}
+Returns the content of the receiver as a string value.
+
+If the receiver is a node object of element kind, the content is that of any text-\/node children. This method recursively visits elements nodes and concatenates their text nodes in document order with no intervening spaces. \hypertarget{interface_d_d_x_m_l_node_a9f06d71004107da39a2f63da7fc5b171}{
+\index{DDXMLNode@{DDXMLNode}!textWithStringValue:@{textWithStringValue:}}
+\index{textWithStringValue:@{textWithStringValue:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{textWithStringValue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) textWithStringValue: ({\bf NSString} $\ast$) {\em stringValue}}}
+\label{interface_d_d_x_m_l_node_a9f06d71004107da39a2f63da7fc5b171}
+\hypertarget{interface_d_d_x_m_l_node_a3fbf2d9d05fea4573b43b2f7b6cd0208}{
+\index{DDXMLNode@{DDXMLNode}!URI@{URI}}
+\index{URI@{URI}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{URI}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) URI }}
+\label{interface_d_d_x_m_l_node_a3fbf2d9d05fea4573b43b2f7b6cd0208}
+Returns the URI associated with the receiver.
+
+A node’s URI is derived from its namespace or a document’s URI; for documents, the URI comes either from the parsed XML or is explicitly set. You cannot change the URI for a particular node other for than a namespace or document node. \hypertarget{interface_d_d_x_m_l_node_a0490ce113e7d25543791057857fe07f9}{
+\index{DDXMLNode@{DDXMLNode}!XMLString@{XMLString}}
+\index{XMLString@{XMLString}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{XMLString}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) XMLString }}
+\label{interface_d_d_x_m_l_node_a0490ce113e7d25543791057857fe07f9}
+\hypertarget{interface_d_d_x_m_l_node_aae8fe9aae42dc70a3c55fb98687ab236}{
+\index{DDXMLNode@{DDXMLNode}!XMLStringWithOptions:@{XMLStringWithOptions:}}
+\index{XMLStringWithOptions:@{XMLStringWithOptions:}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{XMLStringWithOptions:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) XMLStringWithOptions: (NSUInteger) {\em options}}}
+\label{interface_d_d_x_m_l_node_aae8fe9aae42dc70a3c55fb98687ab236}
+\hypertarget{interface_d_d_x_m_l_node_ae6f6f5b9a5e69082c41d33d0673a4d77}{
+\index{DDXMLNode@{DDXMLNode}!XPath@{XPath}}
+\index{XPath@{XPath}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{XPath}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) XPath }}
+\label{interface_d_d_x_m_l_node_ae6f6f5b9a5e69082c41d33d0673a4d77}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_d_d_x_m_l_node_a89c85618e7eeb82fbcc1c8fc710108f4}{
+\index{DDXMLNode@{DDXMLNode}!genericPtr@{genericPtr}}
+\index{genericPtr@{genericPtr}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{genericPtr}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (struct {\bf \_\-xmlKind}$\ast$) {\bf genericPtr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{interface_d_d_x_m_l_node_a89c85618e7eeb82fbcc1c8fc710108f4}
+\hypertarget{interface_d_d_x_m_l_node_ad09259817961af0ab00be1047f23c363}{
+\index{DDXMLNode@{DDXMLNode}!owner@{owner}}
+\index{owner@{owner}!DDXMLNode@{DDXMLNode}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode}$\ast$) {\bf owner}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{interface_d_d_x_m_l_node_ad09259817961af0ab00be1047f23c363}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_d_x_m_l_node_8h}{DDXMLNode.h}\item 
+\hyperlink{_d_d_x_m_l_node_8m}{DDXMLNode.m}\end{DoxyCompactItemize}

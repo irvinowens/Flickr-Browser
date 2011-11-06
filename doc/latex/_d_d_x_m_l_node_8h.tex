@@ -1,0 +1,151 @@
+\hypertarget{_d_d_x_m_l_node_8h}{
+\section{DDXMLNode.h File Reference}
+\label{_d_d_x_m_l_node_8h}\index{DDXMLNode.h@{DDXMLNode.h}}
+}
+{\ttfamily \#import $<$Foundation/Foundation.h$>$}\par
+{\ttfamily \#import $<$libxml/tree.h$>$}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_d_d_x_m_l_node}{DDXMLNode}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef NSUInteger \hyperlink{_d_d_x_m_l_node_8h_aeb91775383bcc3650dbe0a4c4e6ed34f}{DDXMLNodeKind}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \par
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6208d00081610297224a0e8645e004d8}{DDXMLInvalidKind} =  0, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6ac56afd2e81b43f65579cac510dfebf}{DDXMLDocumentKind} =  XML\_\-DOCUMENT\_\-NODE, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a8794140aef9a2d5b6acd05fe1b60a170}{DDXMLElementKind} =  XML\_\-ELEMENT\_\-NODE, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aa94b771f50a067f944cb247b7375e02b}{DDXMLAttributeKind} =  XML\_\-ATTRIBUTE\_\-NODE, 
+\par
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7acc05576068c17d5542bfc84fe235cd35}{DDXMLNamespaceKind} =  XML\_\-NAMESPACE\_\-DECL, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a03998cb98dbd1f007f7a9a4803a6b2da}{DDXMLProcessingInstructionKind} =  XML\_\-PI\_\-NODE, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a0e81c730af8c8ed1f6a9ea4af73ea986}{DDXMLCommentKind} =  XML\_\-COMMENT\_\-NODE, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a661b6fe353999bfdc77bd861b90231bf}{DDXMLTextKind} =  XML\_\-TEXT\_\-NODE, 
+\par
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a7c4c7c25ef5ed304c7263dbd2b01853f}{DDXMLDTDKind} =  XML\_\-DTD\_\-NODE, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a1f0f47e09483dad0e747b8e79a76ad5c}{DDXMLEntityDeclarationKind} =  XML\_\-ENTITY\_\-DECL, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6445f3fa1c994562ffa19da268970a8b}{DDXMLAttributeDeclarationKind} =  XML\_\-ATTRIBUTE\_\-DECL, 
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a2469a18f8e697c2e9c50c0c4a01401e8}{DDXMLElementDeclarationKind} =  XML\_\-ELEMENT\_\-DECL, 
+\par
+\hyperlink{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aed72975ab98aab2d1b88c20e6ed260f7}{DDXMLNotationDeclarationKind} =  XML\_\-NOTATION\_\-NODE
+ \}
+\item 
+enum \{ \hyperlink{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a34a925ee36b99fbcd8dc62e29f73f839}{DDXMLNodeOptionsNone} =  0, 
+\hyperlink{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a1ff10475b0d26acb65abcf4bb39bc5e7}{DDXMLNodeExpandEmptyElement} =  1 $<$$<$ 1, 
+\hyperlink{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5afd94d724d73b2e41fbd448cf5946186b}{DDXMLNodeCompactEmptyElement} =  1 $<$$<$ 2, 
+\hyperlink{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5af8e79b34bda21ce1dcb390619e52c23c}{DDXMLNodePrettyPrint} =  1 $<$$<$ 17
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_d_d_x_m_l_node_8h_aeb91775383bcc3650dbe0a4c4e6ed34f}{
+\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNodeKind@{DDXMLNodeKind}}
+\index{DDXMLNodeKind@{DDXMLNodeKind}!DDXMLNode.h@{DDXMLNode.h}}
+\subsubsection[{DDXMLNodeKind}]{\setlength{\rightskip}{0pt plus 5cm}typedef NSUInteger {\bf DDXMLNodeKind}}}
+\label{_d_d_x_m_l_node_8h_aeb91775383bcc3650dbe0a4c4e6ed34f}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7}{
+\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7}
+Welcome to KissXML.
+
+The project page has documentation if you have questions. \href{https://github.com/robbiehanson/KissXML}{\tt https://github.com/robbiehanson/KissXML}
+
+If you're new to the project you may wish to read the \char`\"{}Getting Started\char`\"{} wiki. \href{https://github.com/robbiehanson/KissXML/wiki/GettingStarted}{\tt https://github.com/robbiehanson/KissXML/wiki/GettingStarted}
+
+KissXML provides a drop-\/in replacement for Apple's NSXML class cluster. The goal is to get the exact same behavior as the NSXML classes.
+
+For API Reference, see Apple's excellent documentation, either via Xcode's Mac OS X documentation, or via the web:
+
+\href{https://github.com/robbiehanson/KissXML/wiki/Reference}{\tt https://github.com/robbiehanson/KissXML/wiki/Reference} \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DDXMLInvalidKind@{DDXMLInvalidKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLInvalidKind@{DDXMLInvalidKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6208d00081610297224a0e8645e004d8}{
+DDXMLInvalidKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6208d00081610297224a0e8645e004d8}
+}]\index{DDXMLDocumentKind@{DDXMLDocumentKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLDocumentKind@{DDXMLDocumentKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6ac56afd2e81b43f65579cac510dfebf}{
+DDXMLDocumentKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6ac56afd2e81b43f65579cac510dfebf}
+}]\index{DDXMLElementKind@{DDXMLElementKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLElementKind@{DDXMLElementKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a8794140aef9a2d5b6acd05fe1b60a170}{
+DDXMLElementKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a8794140aef9a2d5b6acd05fe1b60a170}
+}]\index{DDXMLAttributeKind@{DDXMLAttributeKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLAttributeKind@{DDXMLAttributeKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aa94b771f50a067f944cb247b7375e02b}{
+DDXMLAttributeKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aa94b771f50a067f944cb247b7375e02b}
+}]\index{DDXMLNamespaceKind@{DDXMLNamespaceKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNamespaceKind@{DDXMLNamespaceKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7acc05576068c17d5542bfc84fe235cd35}{
+DDXMLNamespaceKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7acc05576068c17d5542bfc84fe235cd35}
+}]\index{DDXMLProcessingInstructionKind@{DDXMLProcessingInstructionKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLProcessingInstructionKind@{DDXMLProcessingInstructionKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a03998cb98dbd1f007f7a9a4803a6b2da}{
+DDXMLProcessingInstructionKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a03998cb98dbd1f007f7a9a4803a6b2da}
+}]\index{DDXMLCommentKind@{DDXMLCommentKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLCommentKind@{DDXMLCommentKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a0e81c730af8c8ed1f6a9ea4af73ea986}{
+DDXMLCommentKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a0e81c730af8c8ed1f6a9ea4af73ea986}
+}]\index{DDXMLTextKind@{DDXMLTextKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLTextKind@{DDXMLTextKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a661b6fe353999bfdc77bd861b90231bf}{
+DDXMLTextKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a661b6fe353999bfdc77bd861b90231bf}
+}]\index{DDXMLDTDKind@{DDXMLDTDKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLDTDKind@{DDXMLDTDKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a7c4c7c25ef5ed304c7263dbd2b01853f}{
+DDXMLDTDKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a7c4c7c25ef5ed304c7263dbd2b01853f}
+}]\index{DDXMLEntityDeclarationKind@{DDXMLEntityDeclarationKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLEntityDeclarationKind@{DDXMLEntityDeclarationKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a1f0f47e09483dad0e747b8e79a76ad5c}{
+DDXMLEntityDeclarationKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a1f0f47e09483dad0e747b8e79a76ad5c}
+}]\index{DDXMLAttributeDeclarationKind@{DDXMLAttributeDeclarationKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLAttributeDeclarationKind@{DDXMLAttributeDeclarationKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6445f3fa1c994562ffa19da268970a8b}{
+DDXMLAttributeDeclarationKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a6445f3fa1c994562ffa19da268970a8b}
+}]\index{DDXMLElementDeclarationKind@{DDXMLElementDeclarationKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLElementDeclarationKind@{DDXMLElementDeclarationKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a2469a18f8e697c2e9c50c0c4a01401e8}{
+DDXMLElementDeclarationKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7a2469a18f8e697c2e9c50c0c4a01401e8}
+}]\index{DDXMLNotationDeclarationKind@{DDXMLNotationDeclarationKind}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNotationDeclarationKind@{DDXMLNotationDeclarationKind}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aed72975ab98aab2d1b88c20e6ed260f7}{
+DDXMLNotationDeclarationKind}
+\label{_d_d_x_m_l_node_8h_adf764cbdea00d65edcd07bb9953ad2b7aed72975ab98aab2d1b88c20e6ed260f7}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5}{
+\subsubsection[{"@2}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DDXMLNodeOptionsNone@{DDXMLNodeOptionsNone}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNodeOptionsNone@{DDXMLNodeOptionsNone}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a34a925ee36b99fbcd8dc62e29f73f839}{
+DDXMLNodeOptionsNone}
+\label{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a34a925ee36b99fbcd8dc62e29f73f839}
+}]\index{DDXMLNodeExpandEmptyElement@{DDXMLNodeExpandEmptyElement}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNodeExpandEmptyElement@{DDXMLNodeExpandEmptyElement}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a1ff10475b0d26acb65abcf4bb39bc5e7}{
+DDXMLNodeExpandEmptyElement}
+\label{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5a1ff10475b0d26acb65abcf4bb39bc5e7}
+}]\index{DDXMLNodeCompactEmptyElement@{DDXMLNodeCompactEmptyElement}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNodeCompactEmptyElement@{DDXMLNodeCompactEmptyElement}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5afd94d724d73b2e41fbd448cf5946186b}{
+DDXMLNodeCompactEmptyElement}
+\label{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5afd94d724d73b2e41fbd448cf5946186b}
+}]\index{DDXMLNodePrettyPrint@{DDXMLNodePrettyPrint}!DDXMLNode.h@{DDXMLNode.h}}\index{DDXMLNode.h@{DDXMLNode.h}!DDXMLNodePrettyPrint@{DDXMLNodePrettyPrint}}\item[{\em 
+\hypertarget{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5af8e79b34bda21ce1dcb390619e52c23c}{
+DDXMLNodePrettyPrint}
+\label{_d_d_x_m_l_node_8h_a99fb83031ce9923c84392b4e92f956b5af8e79b34bda21ce1dcb390619e52c23c}
+}]\end{description}
+\end{Desc}
+

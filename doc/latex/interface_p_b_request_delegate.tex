@@ -1,0 +1,50 @@
+\hypertarget{interface_p_b_request_delegate}{
+\section{PBRequestDelegate Class Reference}
+\label{interface_p_b_request_delegate}\index{PBRequestDelegate@{PBRequestDelegate}}
+}
+
+
+{\ttfamily \#import $<$PBRequestDelegate.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_p_b_request_delegate_a7fef1b0584a2e49d581c938e0921e8e6}{initWithHandler:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_p_b_request_delegate_a2e9c42e929a2260dbea48ac0d0136e7a}{handler}
+\item 
+NSMutableData $\ast$ \hyperlink{interface_p_b_request_delegate_af791281e7c89b398f47ca32063a1d2fa}{receivedData}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The request delegate is a generic, overridable class to respond to NSURLConnection inbound events 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_p_b_request_delegate_a7fef1b0584a2e49d581c938e0921e8e6}{
+\index{PBRequestDelegate@{PBRequestDelegate}!initWithHandler:@{initWithHandler:}}
+\index{initWithHandler:@{initWithHandler:}!PBRequestDelegate@{PBRequestDelegate}}
+\subsubsection[{initWithHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithHandler: (id) {\em myHandler}}}
+\label{interface_p_b_request_delegate_a7fef1b0584a2e49d581c938e0921e8e6}
+Just go ahead and initialize the connection delegate with the class implementing the connection delegate format 
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_b_request_delegate_a2e9c42e929a2260dbea48ac0d0136e7a}{
+\index{PBRequestDelegate@{PBRequestDelegate}!handler@{handler}}
+\index{handler@{handler}!PBRequestDelegate@{PBRequestDelegate}}
+\subsubsection[{handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) handler\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_request_delegate_a2e9c42e929a2260dbea48ac0d0136e7a}
+The handler is the class to respond to inbound events \hypertarget{interface_p_b_request_delegate_af791281e7c89b398f47ca32063a1d2fa}{
+\index{PBRequestDelegate@{PBRequestDelegate}!receivedData@{receivedData}}
+\index{receivedData@{receivedData}!PBRequestDelegate@{PBRequestDelegate}}
+\subsubsection[{receivedData}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSMutableData $\ast$) receivedData\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_request_delegate_af791281e7c89b398f47ca32063a1d2fa}
+Store for intermediate bytes of data, if necessary 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_request_delegate_8h}{PBRequestDelegate.h}\item 
+PhotoBrowser/\hyperlink{_p_b_request_delegate_8m}{PBRequestDelegate.m}\end{DoxyCompactItemize}

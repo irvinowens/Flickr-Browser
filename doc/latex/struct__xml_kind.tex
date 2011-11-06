@@ -1,0 +1,38 @@
+\hypertarget{struct__xml_kind}{
+\section{\_\-xmlKind Struct Reference}
+\label{struct__xml_kind}\index{\_\-xmlKind@{\_\-xmlKind}}
+}
+
+
+{\ttfamily \#include $<$DDXMLPrivate.h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{struct__xml_kind_a831fa35e52ad47d2360d29adf34a3028}{ignore}
+\item 
+xmlElementType \hyperlink{struct__xml_kind_ac5b2f541d66059a7c8de2599ba543e70}{type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} can represent several underlying types, such as xmlNodePtr, xmlDocPtr, xmlAttrPtr, xmlNsPtr, etc. All of these are pointers to structures, and all of those structures start with a pointer, and a type. The xmlKind struct is used as a generic structure, and a stepping stone. We use it to check the type of a structure, and then perform the appropriate cast.
+
+For example: if(genericPtr-\/$>$type == XML\_\-ATTRIBUTE\_\-NODE) \{ xmlAttrPtr attr = (xmlAttrPtr)genericPtr; // Do something with attr \} 
+
+\subsection{Field Documentation}
+\hypertarget{struct__xml_kind_a831fa35e52ad47d2360d29adf34a3028}{
+\index{\_\-xmlKind@{\_\-xmlKind}!ignore@{ignore}}
+\index{ignore@{ignore}!_xmlKind@{\_\-xmlKind}}
+\subsubsection[{ignore}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf ignore}}}
+\label{struct__xml_kind_a831fa35e52ad47d2360d29adf34a3028}
+\hypertarget{struct__xml_kind_ac5b2f541d66059a7c8de2599ba543e70}{
+\index{\_\-xmlKind@{\_\-xmlKind}!type@{type}}
+\index{type@{type}!_xmlKind@{\_\-xmlKind}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}xmlElementType {\bf type}}}
+\label{struct__xml_kind_ac5b2f541d66059a7c8de2599ba543e70}
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Private/\hyperlink{_d_d_x_m_l_private_8h}{DDXMLPrivate.h}\end{DoxyCompactItemize}

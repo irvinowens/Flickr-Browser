@@ -1,0 +1,58 @@
+\hypertarget{protocol_p_b_request_data_delegate-p}{
+\section{$<$PBRequestDataDelegate$>$ Protocol Reference}
+\label{protocol_p_b_request_data_delegate-p}\index{PBRequestDataDelegate-\/p@{PBRequestDataDelegate-\/p}}
+}
+
+
+{\ttfamily \#import $<$PBRequestConnection.h$>$}
+
+Inheritance diagram for $<$PBRequestDataDelegate$>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{protocol_p_b_request_data_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_p_b_request_data_delegate-p_a611a767feb6d909f711af3edbfbcac71}{requestMade:}
+\item 
+(void) -\/ \hyperlink{protocol_p_b_request_data_delegate-p_a8c470348d27d13f5d8784b65c8989e95}{requestCompleted:withData:}
+\item 
+(void) -\/ \hyperlink{protocol_p_b_request_data_delegate-p_ac1ed08e62e6d22f177e90a8ffa2529e7}{request:experiencedError:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_p_b_request_data_delegate-p_ac1ed08e62e6d22f177e90a8ffa2529e7}{
+\index{PBRequestDataDelegate-\/p@{PBRequestDataDelegate-\/p}!request:experiencedError:@{request:experiencedError:}}
+\index{request:experiencedError:@{request:experiencedError:}!PBRequestDataDelegate-p@{PBRequestDataDelegate-\/p}}
+\subsubsection[{request:experiencedError:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) request: ({\bf PBRequestConnection} $\ast$) {\em request}\/ experiencedError: (NSError $\ast$) {\em error}}}
+\label{protocol_p_b_request_data_delegate-p_ac1ed08e62e6d22f177e90a8ffa2529e7}
+The request could not be completed for some reason 
+\begin{DoxyParams}{Parameters}
+\item[{\em (PBRequest}]$\ast$)request The request that was made and failed \item[{\em (NSError}]$\ast$)error The error that happened \end{DoxyParams}
+\hypertarget{protocol_p_b_request_data_delegate-p_a8c470348d27d13f5d8784b65c8989e95}{
+\index{PBRequestDataDelegate-\/p@{PBRequestDataDelegate-\/p}!requestCompleted:withData:@{requestCompleted:withData:}}
+\index{requestCompleted:withData:@{requestCompleted:withData:}!PBRequestDataDelegate-p@{PBRequestDataDelegate-\/p}}
+\subsubsection[{requestCompleted:withData:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) requestCompleted: ({\bf PBRequestConnection} $\ast$) {\em request}\/ withData: (NSData $\ast$) {\em data}}}
+\label{protocol_p_b_request_data_delegate-p_a8c470348d27d13f5d8784b65c8989e95}
+Tell the delegate the request completed and provide full data 
+\begin{DoxyParams}{Parameters}
+\item[{\em (PBRequest}]$\ast$)request The request that was made \item[{\em (NSData}]$\ast$)data The data from the request \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The full data response 
+\end{DoxyReturn}
+\hypertarget{protocol_p_b_request_data_delegate-p_a611a767feb6d909f711af3edbfbcac71}{
+\index{PBRequestDataDelegate-\/p@{PBRequestDataDelegate-\/p}!requestMade:@{requestMade:}}
+\index{requestMade:@{requestMade:}!PBRequestDataDelegate-p@{PBRequestDataDelegate-\/p}}
+\subsubsection[{requestMade:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) requestMade: ({\bf PBRequestConnection} $\ast$) {\em request}}}
+\label{protocol_p_b_request_data_delegate-p_a611a767feb6d909f711af3edbfbcac71}
+Tell the delegate method that the request was made 
+\begin{DoxyParams}{Parameters}
+\item[{\em (PBRequest}]$\ast$)request The request that is in progress \end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_request_connection_8h}{PBRequestConnection.h}\end{DoxyCompactItemize}

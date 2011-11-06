@@ -1,0 +1,59 @@
+\hypertarget{interface_p_b_request_connection}{
+\section{PBRequestConnection Class Reference}
+\label{interface_p_b_request_connection}\index{PBRequestConnection@{PBRequestConnection}}
+}
+
+
+{\ttfamily \#import $<$PBRequestConnection.h$>$}
+
+Inheritance diagram for PBRequestConnection:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{interface_p_b_request_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_b_request_connection_a014d10ea50c7d8df727f710a681eae30}{makeRequestToUrl:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_p_b_request_data_delegate-p}{PBRequestDataDelegate} $>$ \hyperlink{interface_p_b_request_connection_a79f0873c9262a2cbdd23119b13608a51}{delegate}
+\item 
+\hyperlink{interface_p_b_request_delegate}{PBRequestDelegate} $\ast$ \hyperlink{interface_p_b_request_connection_a65d23493156958db1aabd045604095b6}{requestDelegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The PBRequest is the base implementation for creating a request to an external service 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_p_b_request_connection_a014d10ea50c7d8df727f710a681eae30}{
+\index{PBRequestConnection@{PBRequestConnection}!makeRequestToUrl:@{makeRequestToUrl:}}
+\index{makeRequestToUrl:@{makeRequestToUrl:}!PBRequestConnection@{PBRequestConnection}}
+\subsubsection[{makeRequestToUrl:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) makeRequestToUrl: (NSURL $\ast$) {\em url}}}
+\label{interface_p_b_request_connection_a014d10ea50c7d8df727f710a681eae30}
+Initializes a request to a given url 
+\begin{DoxyParams}{Parameters}
+\item[{\em (NSURL}]$\ast$)url takes an NSURL \end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_b_request_connection_a79f0873c9262a2cbdd23119b13608a51}{
+\index{PBRequestConnection@{PBRequestConnection}!delegate@{delegate}}
+\index{delegate@{delegate}!PBRequestConnection@{PBRequestConnection}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<$ {\bf PBRequestDataDelegate} $>$) delegate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_request_connection_a79f0873c9262a2cbdd23119b13608a51}
+\hypertarget{interface_p_b_request_connection_a65d23493156958db1aabd045604095b6}{
+\index{PBRequestConnection@{PBRequestConnection}!requestDelegate@{requestDelegate}}
+\index{requestDelegate@{requestDelegate}!PBRequestConnection@{PBRequestConnection}}
+\subsubsection[{requestDelegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf PBRequestDelegate} $\ast$) requestDelegate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_request_connection_a65d23493156958db1aabd045604095b6}
+The delegate for the NSURLRequest 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_request_connection_8h}{PBRequestConnection.h}\item 
+PhotoBrowser/\hyperlink{_p_b_request_connection_8m}{PBRequestConnection.m}\end{DoxyCompactItemize}

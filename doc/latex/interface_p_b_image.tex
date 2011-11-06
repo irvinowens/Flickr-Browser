@@ -1,0 +1,195 @@
+\hypertarget{interface_p_b_image}{
+\section{PBImage Class Reference}
+\label{interface_p_b_image}\index{PBImage@{PBImage}}
+}
+
+
+{\ttfamily \#import $<$PBImage.h$>$}
+
+Inheritance diagram for PBImage:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{interface_p_b_image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a4af15f2a0b22a1cb6fb88aafbc7fa2d5}{loadAuthorImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a309bbbd97bdb73cd5ce68b85dd10d2ef}{unloadAuthorImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a97e942803d2815e8cf393da6c6d8c78e}{loadPhotoImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a59d1856264f9708693f57071a56a03f5}{unloadPhotoImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a002ec7944ae9c0e779867a42af048945}{loadPhotoThumbnailImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a4b836242ce7c4ce1cd008a487481d6bf}{unloadPhotoThumbnailImage}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+NSDate $\ast$ \hyperlink{interface_p_b_image_a9870fa11fd951bc55b7a115c227f0f97}{takenDate}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_p_b_image_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_ab2b75fc62ad2bd0851e3dbc23970e861}{imageTitle}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_aa261fc22d796a74fe41c14b28e08b30b}{imageId}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_ad8ac8644eb2e6a0a2b963a0242235562}{webLink}
+\item 
+NSDate $\ast$ \hyperlink{interface_p_b_image_a7c9e348da15c9c34c347bcc1bafd6fa2}{publishedDate}
+\item 
+NSDate $\ast$ \hyperlink{interface_p_b_image_ad3d43ed4d30cf7a94aea5bd5ae7e0671}{updatedDate}
+\item 
+NSDate $\ast$ \hyperlink{interface_p_b_image_aec17cd0d68172718dfac2208e2f104cd}{dateTaken}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_a8442f36d5bc844633edba74b62ce2990}{content}
+\item 
+UIImage $\ast$ \hyperlink{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}{authorImage}
+\item 
+UIImage $\ast$ \hyperlink{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}{photoImage}
+\item 
+UIImage $\ast$ \hyperlink{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}{photoThumbnail}
+\item 
+\hyperlink{interface_p_b_image_request}{PBImageRequest} $\ast$ \hyperlink{interface_p_b_image_ae1353071f99808617f8d3726ebc0db95}{imageRequest}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_ad3d1904f67220f320f88ad5b6a9714ef}{authorImageUri}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_afd02dd84e4335a88dfb40fa243268f85}{photoImageUri}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_a68ff9e3c26d377921ce02942d15f7fbb}{photoThumbnailUri}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{interface_p_b_image}{PBImage} model is the domain entity that encapsulates a flickr photo, it also provides caching for the image objects that will back the UI 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_p_b_image_a4af15f2a0b22a1cb6fb88aafbc7fa2d5}{
+\index{PBImage@{PBImage}!loadAuthorImage@{loadAuthorImage}}
+\index{loadAuthorImage@{loadAuthorImage}!PBImage@{PBImage}}
+\subsubsection[{loadAuthorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadAuthorImage }}
+\label{interface_p_b_image_a4af15f2a0b22a1cb6fb88aafbc7fa2d5}
+Load the author image into memory \hypertarget{interface_p_b_image_a97e942803d2815e8cf393da6c6d8c78e}{
+\index{PBImage@{PBImage}!loadPhotoImage@{loadPhotoImage}}
+\index{loadPhotoImage@{loadPhotoImage}!PBImage@{PBImage}}
+\subsubsection[{loadPhotoImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadPhotoImage }}
+\label{interface_p_b_image_a97e942803d2815e8cf393da6c6d8c78e}
+Load the photo image into memory \hypertarget{interface_p_b_image_a002ec7944ae9c0e779867a42af048945}{
+\index{PBImage@{PBImage}!loadPhotoThumbnailImage@{loadPhotoThumbnailImage}}
+\index{loadPhotoThumbnailImage@{loadPhotoThumbnailImage}!PBImage@{PBImage}}
+\subsubsection[{loadPhotoThumbnailImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadPhotoThumbnailImage }}
+\label{interface_p_b_image_a002ec7944ae9c0e779867a42af048945}
+Load the photo thumbnail image into the model \hypertarget{interface_p_b_image_a309bbbd97bdb73cd5ce68b85dd10d2ef}{
+\index{PBImage@{PBImage}!unloadAuthorImage@{unloadAuthorImage}}
+\index{unloadAuthorImage@{unloadAuthorImage}!PBImage@{PBImage}}
+\subsubsection[{unloadAuthorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) unloadAuthorImage }}
+\label{interface_p_b_image_a309bbbd97bdb73cd5ce68b85dd10d2ef}
+Unload the author image from memory \hypertarget{interface_p_b_image_a59d1856264f9708693f57071a56a03f5}{
+\index{PBImage@{PBImage}!unloadPhotoImage@{unloadPhotoImage}}
+\index{unloadPhotoImage@{unloadPhotoImage}!PBImage@{PBImage}}
+\subsubsection[{unloadPhotoImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) unloadPhotoImage }}
+\label{interface_p_b_image_a59d1856264f9708693f57071a56a03f5}
+Unload the photo image from memory \hypertarget{interface_p_b_image_a4b836242ce7c4ce1cd008a487481d6bf}{
+\index{PBImage@{PBImage}!unloadPhotoThumbnailImage@{unloadPhotoThumbnailImage}}
+\index{unloadPhotoThumbnailImage@{unloadPhotoThumbnailImage}!PBImage@{PBImage}}
+\subsubsection[{unloadPhotoThumbnailImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) unloadPhotoThumbnailImage }}
+\label{interface_p_b_image_a4b836242ce7c4ce1cd008a487481d6bf}
+Unload the photo thumbnail from the model 
+
+\subsection{Field Documentation}
+\hypertarget{interface_p_b_image_a9870fa11fd951bc55b7a115c227f0f97}{
+\index{PBImage@{PBImage}!takenDate@{takenDate}}
+\index{takenDate@{takenDate}!PBImage@{PBImage}}
+\subsubsection[{takenDate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDate$\ast$) {\bf takenDate}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{interface_p_b_image_a9870fa11fd951bc55b7a115c227f0f97}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}{
+\index{PBImage@{PBImage}!authorImage@{authorImage}}
+\index{authorImage@{authorImage}!PBImage@{PBImage}}
+\subsubsection[{authorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) authorImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}
+\hypertarget{interface_p_b_image_ad3d1904f67220f320f88ad5b6a9714ef}{
+\index{PBImage@{PBImage}!authorImageUri@{authorImageUri}}
+\index{authorImageUri@{authorImageUri}!PBImage@{PBImage}}
+\subsubsection[{authorImageUri}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) authorImageUri\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_ad3d1904f67220f320f88ad5b6a9714ef}
+\hypertarget{interface_p_b_image_a8442f36d5bc844633edba74b62ce2990}{
+\index{PBImage@{PBImage}!content@{content}}
+\index{content@{content}!PBImage@{PBImage}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) content\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a8442f36d5bc844633edba74b62ce2990}
+\hypertarget{interface_p_b_image_aec17cd0d68172718dfac2208e2f104cd}{
+\index{PBImage@{PBImage}!dateTaken@{dateTaken}}
+\index{dateTaken@{dateTaken}!PBImage@{PBImage}}
+\subsubsection[{dateTaken}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDate$\ast$) dateTaken\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_aec17cd0d68172718dfac2208e2f104cd}
+\hypertarget{interface_p_b_image_a8d9332fcd23523b1e2520b8765577423}{
+\index{PBImage@{PBImage}!delegate@{delegate}}
+\index{delegate@{delegate}!PBImage@{PBImage}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a8d9332fcd23523b1e2520b8765577423}
+\hypertarget{interface_p_b_image_aa261fc22d796a74fe41c14b28e08b30b}{
+\index{PBImage@{PBImage}!imageId@{imageId}}
+\index{imageId@{imageId}!PBImage@{PBImage}}
+\subsubsection[{imageId}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) imageId\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_aa261fc22d796a74fe41c14b28e08b30b}
+\hypertarget{interface_p_b_image_ae1353071f99808617f8d3726ebc0db95}{
+\index{PBImage@{PBImage}!imageRequest@{imageRequest}}
+\index{imageRequest@{imageRequest}!PBImage@{PBImage}}
+\subsubsection[{imageRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf PBImageRequest} $\ast$) imageRequest\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_ae1353071f99808617f8d3726ebc0db95}
+\hypertarget{interface_p_b_image_ab2b75fc62ad2bd0851e3dbc23970e861}{
+\index{PBImage@{PBImage}!imageTitle@{imageTitle}}
+\index{imageTitle@{imageTitle}!PBImage@{PBImage}}
+\subsubsection[{imageTitle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) imageTitle\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_ab2b75fc62ad2bd0851e3dbc23970e861}
+\hypertarget{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}{
+\index{PBImage@{PBImage}!photoImage@{photoImage}}
+\index{photoImage@{photoImage}!PBImage@{PBImage}}
+\subsubsection[{photoImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) photoImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}
+\hypertarget{interface_p_b_image_afd02dd84e4335a88dfb40fa243268f85}{
+\index{PBImage@{PBImage}!photoImageUri@{photoImageUri}}
+\index{photoImageUri@{photoImageUri}!PBImage@{PBImage}}
+\subsubsection[{photoImageUri}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) photoImageUri\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_afd02dd84e4335a88dfb40fa243268f85}
+\hypertarget{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}{
+\index{PBImage@{PBImage}!photoThumbnail@{photoThumbnail}}
+\index{photoThumbnail@{photoThumbnail}!PBImage@{PBImage}}
+\subsubsection[{photoThumbnail}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) photoThumbnail\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}
+\hypertarget{interface_p_b_image_a68ff9e3c26d377921ce02942d15f7fbb}{
+\index{PBImage@{PBImage}!photoThumbnailUri@{photoThumbnailUri}}
+\index{photoThumbnailUri@{photoThumbnailUri}!PBImage@{PBImage}}
+\subsubsection[{photoThumbnailUri}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) photoThumbnailUri\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a68ff9e3c26d377921ce02942d15f7fbb}
+\hypertarget{interface_p_b_image_a7c9e348da15c9c34c347bcc1bafd6fa2}{
+\index{PBImage@{PBImage}!publishedDate@{publishedDate}}
+\index{publishedDate@{publishedDate}!PBImage@{PBImage}}
+\subsubsection[{publishedDate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDate $\ast$) publishedDate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_a7c9e348da15c9c34c347bcc1bafd6fa2}
+\hypertarget{interface_p_b_image_ad3d43ed4d30cf7a94aea5bd5ae7e0671}{
+\index{PBImage@{PBImage}!updatedDate@{updatedDate}}
+\index{updatedDate@{updatedDate}!PBImage@{PBImage}}
+\subsubsection[{updatedDate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDate $\ast$) updatedDate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_ad3d43ed4d30cf7a94aea5bd5ae7e0671}
+\hypertarget{interface_p_b_image_ad8ac8644eb2e6a0a2b963a0242235562}{
+\index{PBImage@{PBImage}!webLink@{webLink}}
+\index{webLink@{webLink}!PBImage@{PBImage}}
+\subsubsection[{webLink}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) webLink\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_p_b_image_ad8ac8644eb2e6a0a2b963a0242235562}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_image_8h}{PBImage.h}\item 
+PhotoBrowser/\hyperlink{_p_b_image_8m}{PBImage.m}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{_d_d_x_m_l_private_8h}{
+\section{Private/DDXMLPrivate.h File Reference}
+\label{_d_d_x_m_l_private_8h}\index{Private/DDXMLPrivate.h@{Private/DDXMLPrivate.h}}
+}
+{\ttfamily \#import \char`\"{}DDXML.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__xml_kind}{\_\-xmlKind}
+\item 
+struct \hyperlink{struct__xml_std}{\_\-xmlStd}
+\item 
+class \hyperlink{class_d_d_x_m_l_namespace_node}{DDXMLNamespaceNode}
+\item 
+class \hyperlink{class_d_d_x_m_l_attribute_node}{DDXMLAttributeNode}
+\item 
+class \hyperlink{class_d_d_x_m_l_invalid_node}{DDXMLInvalidNode}
+\item 
+class {\bfseries DDXMLNode(PrivateAPI)}
+\item 
+class {\bfseries DDXMLElement(PrivateAPI)}
+\item 
+class {\bfseries DDXMLDocument(PrivateAPI)}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_d_x_m_l_private_8h_ae92a5ad9a5268bc3e99536f732f46be7}{DDXMLAssert}(condition, desc,...)
+\item 
+\#define \hyperlink{_d_d_x_m_l_private_8h_a7018bd50ae903ba74f241834d6cc8f9f}{DDLastErrorKey}~@\char`\"{}DDXML:LastError\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__xml_kind}{\_\-xmlKind} $\ast$ \hyperlink{_d_d_x_m_l_private_8h_af059a5d5dae740d504e2c12da02daabe}{xmlKindPtr}
+\item 
+typedef struct \hyperlink{struct__xml_std}{\_\-xmlStd} $\ast$ \hyperlink{_d_d_x_m_l_private_8h_a17619fa78aed1336cf91c4cedc01461b}{xmlStdPtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\_\-INLINE BOOL \hyperlink{_d_d_x_m_l_private_8h_a8555c287966cd50c98ef41a586f9653a}{IsXmlAttrPtr} (void $\ast$kindPtr)
+\item 
+NS\_\-INLINE BOOL \hyperlink{_d_d_x_m_l_private_8h_ae2fee18278d229b886ea4ad2bc521fb6}{IsXmlNodePtr} (void $\ast$kindPtr)
+\item 
+NS\_\-INLINE BOOL \hyperlink{_d_d_x_m_l_private_8h_aebdf4451c53bf0a55bbb37954bcb9d49}{IsXmlDocPtr} (void $\ast$kindPtr)
+\item 
+NS\_\-INLINE BOOL \hyperlink{_d_d_x_m_l_private_8h_aac22cb022fcab32b9f3cbca2af5ff640}{IsXmlDtdPtr} (void $\ast$kindPtr)
+\item 
+NS\_\-INLINE BOOL \hyperlink{_d_d_x_m_l_private_8h_a49fc813c6830337d07269cef75eb9fa9}{IsXmlNsPtr} (void $\ast$kindPtr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_d_d_x_m_l_private_8h_a7018bd50ae903ba74f241834d6cc8f9f}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!DDLastErrorKey@{DDLastErrorKey}}
+\index{DDLastErrorKey@{DDLastErrorKey}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{DDLastErrorKey}]{\setlength{\rightskip}{0pt plus 5cm}\#define DDLastErrorKey~@\char`\"{}DDXML:LastError\char`\"{}}}
+\label{_d_d_x_m_l_private_8h_a7018bd50ae903ba74f241834d6cc8f9f}
+\hypertarget{_d_d_x_m_l_private_8h_ae92a5ad9a5268bc3e99536f732f46be7}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!DDXMLAssert@{DDXMLAssert}}
+\index{DDXMLAssert@{DDXMLAssert}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{DDXMLAssert}]{\setlength{\rightskip}{0pt plus 5cm}\#define DDXMLAssert(condition, \/  desc, \/   {\em ...})}}
+\label{_d_d_x_m_l_private_8h_ae92a5ad9a5268bc3e99536f732f46be7}
+{\bfseries Value:}
+\begin{DoxyCode}
+do{                                                                              
+                             \
+    if(!(condition)) {                                                           
+                               \
+      [[NSAssertionHandler currentHandler] handleFailureInMethod:_cmd            
+                               \
+                                                          object:self            
+                               \
+                                                            file:[NSString string
+      WithUTF8String:__FILE__] \
+                                                      lineNumber:__LINE__        
+                               \
+                                                     description:(desc), ##__VA_A
+      RGS__];                  \
+    }                                                                            
+                               \
+  }while(NO)
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_d_d_x_m_l_private_8h_af059a5d5dae740d504e2c12da02daabe}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!xmlKindPtr@{xmlKindPtr}}
+\index{xmlKindPtr@{xmlKindPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{xmlKindPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-xmlKind}$\ast$ {\bf xmlKindPtr}}}
+\label{_d_d_x_m_l_private_8h_af059a5d5dae740d504e2c12da02daabe}
+\hypertarget{_d_d_x_m_l_private_8h_a17619fa78aed1336cf91c4cedc01461b}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!xmlStdPtr@{xmlStdPtr}}
+\index{xmlStdPtr@{xmlStdPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{xmlStdPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-xmlStd}$\ast$ {\bf xmlStdPtr}}}
+\label{_d_d_x_m_l_private_8h_a17619fa78aed1336cf91c4cedc01461b}
+
+
+\subsection{Function Documentation}
+\hypertarget{_d_d_x_m_l_private_8h_a8555c287966cd50c98ef41a586f9653a}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!IsXmlAttrPtr@{IsXmlAttrPtr}}
+\index{IsXmlAttrPtr@{IsXmlAttrPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{IsXmlAttrPtr}]{\setlength{\rightskip}{0pt plus 5cm}NS\_\-INLINE BOOL IsXmlAttrPtr (void $\ast$ {\em kindPtr})}}
+\label{_d_d_x_m_l_private_8h_a8555c287966cd50c98ef41a586f9653a}
+\hypertarget{_d_d_x_m_l_private_8h_aebdf4451c53bf0a55bbb37954bcb9d49}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!IsXmlDocPtr@{IsXmlDocPtr}}
+\index{IsXmlDocPtr@{IsXmlDocPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{IsXmlDocPtr}]{\setlength{\rightskip}{0pt plus 5cm}NS\_\-INLINE BOOL IsXmlDocPtr (void $\ast$ {\em kindPtr})}}
+\label{_d_d_x_m_l_private_8h_aebdf4451c53bf0a55bbb37954bcb9d49}
+\hypertarget{_d_d_x_m_l_private_8h_aac22cb022fcab32b9f3cbca2af5ff640}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!IsXmlDtdPtr@{IsXmlDtdPtr}}
+\index{IsXmlDtdPtr@{IsXmlDtdPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{IsXmlDtdPtr}]{\setlength{\rightskip}{0pt plus 5cm}NS\_\-INLINE BOOL IsXmlDtdPtr (void $\ast$ {\em kindPtr})}}
+\label{_d_d_x_m_l_private_8h_aac22cb022fcab32b9f3cbca2af5ff640}
+\hypertarget{_d_d_x_m_l_private_8h_ae2fee18278d229b886ea4ad2bc521fb6}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!IsXmlNodePtr@{IsXmlNodePtr}}
+\index{IsXmlNodePtr@{IsXmlNodePtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{IsXmlNodePtr}]{\setlength{\rightskip}{0pt plus 5cm}NS\_\-INLINE BOOL IsXmlNodePtr (void $\ast$ {\em kindPtr})}}
+\label{_d_d_x_m_l_private_8h_ae2fee18278d229b886ea4ad2bc521fb6}
+\hypertarget{_d_d_x_m_l_private_8h_a49fc813c6830337d07269cef75eb9fa9}{
+\index{DDXMLPrivate.h@{DDXMLPrivate.h}!IsXmlNsPtr@{IsXmlNsPtr}}
+\index{IsXmlNsPtr@{IsXmlNsPtr}!DDXMLPrivate.h@{DDXMLPrivate.h}}
+\subsubsection[{IsXmlNsPtr}]{\setlength{\rightskip}{0pt plus 5cm}NS\_\-INLINE BOOL IsXmlNsPtr (void $\ast$ {\em kindPtr})}}
+\label{_d_d_x_m_l_private_8h_a49fc813c6830337d07269cef75eb9fa9}

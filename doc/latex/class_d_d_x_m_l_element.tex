@@ -1,0 +1,290 @@
+\hypertarget{class_d_d_x_m_l_element}{
+\section{DDXMLElement Class Reference}
+\label{class_d_d_x_m_l_element}\index{DDXMLElement@{DDXMLElement}}
+}
+
+
+{\ttfamily \#import $<$DDXMLElement.h$>$}
+
+Inheritance diagram for DDXMLElement:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_d_d_x_m_l_element}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{class_d_d_x_m_l_element_a7c33a6a67234196892281f15213fef04}{initWithName:}
+\item 
+(id) -\/ \hyperlink{class_d_d_x_m_l_element_a9b8b0cad05ffcf784d4799f6a657cca3}{initWithName:URI:}
+\item 
+(id) -\/ \hyperlink{class_d_d_x_m_l_element_a41737cd45eb9d25991217b46e30a0da5}{initWithName:stringValue:}
+\item 
+(id) -\/ \hyperlink{class_d_d_x_m_l_element_a8dd59d3ce23a8c817482358862f5c78f}{initWithXMLString:error:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a2fbddbefc549e7846f190bb44120986f}{elementsForName:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_af696a4dbd32420584dfc06060ae9f9b8}{elementsForLocalName:URI:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a90f579bbd747393513df84449201c85f}{addAttribute:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_ae8bb5b2fa01d039b3013afc16fe234e7}{removeAttributeForName:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_ab3c20c2f6b0dfa3f73183b53c0a325ed}{setAttributes:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a89366024e44ca50a7a8e76a06144d2a5}{attributes}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a7d5e3634f6e1cdd6a0b7d23d17c0967e}{attributeForName:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a8945f6c9b65a5c3d76c68ab566e2bf08}{addNamespace:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_ae129e509356327ebe9b2bfa178114feb}{removeNamespaceForPrefix:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a7e1763f7cc29c187309c7efe1a9b16a2}{setNamespaces:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a84bb933cd340d685d22805f6dafce4b2}{namespaces}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_af104e0a24367ee5d80dc823ff1478fba}{namespaceForPrefix:}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_afd0fe95a6e828501ee207a5c692bc1e3}{resolveNamespaceForName:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a2b4fa5b03afb01b8c379ffb711614019}{resolvePrefixForNamespaceURI:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_ab78a75bb3b6c2f3321bf4c8acb39b41d}{insertChild:atIndex:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_aa6bc2079078c24d43cc95937ac3c04bd}{removeChildAtIndex:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a27b5fd6a5001e98ef1ab21c914dcd564}{setChildren:}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_aeeb3826c19f1cc0509d8436c61ea4c26}{addChild:}
+\item 
+(\hyperlink{class_d_d_x_m_l_element}{DDXMLElement} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a07d653b036803ab01ec0cc6ed093e566}{elementForName:}
+\item 
+(\hyperlink{class_d_d_x_m_l_element}{DDXMLElement} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a22aa4e3343d528455683da8da7aa48d7}{elementForName:xmlns:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_aaa6f683fff1b13790bc35958ed198e3e}{xmlns}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a639df32cb3879409fe2941ef5655fe4c}{setXmlns:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_ad95d131bbd82beba4f69e713ed4e11de}{prettyXMLString}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a513554279bf1540388cfdce854728211}{compactXMLString}
+\item 
+(void) -\/ \hyperlink{class_d_d_x_m_l_element_a2a7ef778f931f0fa44e9992a67864957}{addAttributeWithName:stringValue:}
+\item 
+(NSDictionary $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a945ca3ee8a11c606522baca7f7766211}{attributesAsDictionary}
+\item 
+(id) -\/ \hyperlink{class_d_d_x_m_l_element_a79d712d11aa8f735023fdb5b682765d8}{initWithElementPrimitive:owner:}
+\item 
+(\hyperlink{interface_d_d_x_m_l_node}{DDXMLNode} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_acbb529f3c7f73cc7569eb9e33de5ff87}{\_\-recursiveResolveNamespaceForPrefix:atNode:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) -\/ \hyperlink{class_d_d_x_m_l_element_a90f75ab79816e6938433e58b960f3922}{\_\-recursiveResolvePrefixForURI:atNode:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_d_d_x_m_l_element}{DDXMLElement} $\ast$) + \hyperlink{class_d_d_x_m_l_element_ae3d8acf51242ab375427beda3db62e5f}{elementWithName:xmlns:}
+\item 
+(id) + \hyperlink{class_d_d_x_m_l_element_a3968eda63db8b6e150e0647440c6c42a}{nodeWithElementPrimitive:owner:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Welcome to KissXML.
+
+The project page has documentation if you have questions. \href{https://github.com/robbiehanson/KissXML}{\tt https://github.com/robbiehanson/KissXML}
+
+If you're new to the project you may wish to read the \char`\"{}Getting Started\char`\"{} wiki. \href{https://github.com/robbiehanson/KissXML/wiki/GettingStarted}{\tt https://github.com/robbiehanson/KissXML/wiki/GettingStarted}
+
+KissXML provides a drop-\/in replacement for Apple's NSXML class cluster. The goal is to get the exact same behavior as the NSXML classes.
+
+For API Reference, see Apple's excellent documentation, either via Xcode's Mac OS X documentation, or via the web:
+
+\href{https://github.com/robbiehanson/KissXML/wiki/Reference}{\tt https://github.com/robbiehanson/KissXML/wiki/Reference} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_d_x_m_l_element_acbb529f3c7f73cc7569eb9e33de5ff87}{
+\index{DDXMLElement@{DDXMLElement}!\_\-recursiveResolveNamespaceForPrefix:atNode:@{\_\-recursiveResolveNamespaceForPrefix:atNode:}}
+\index{\_\-recursiveResolveNamespaceForPrefix:atNode:@{\_\-recursiveResolveNamespaceForPrefix:atNode:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{\_\-recursiveResolveNamespaceForPrefix:atNode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) \_\-recursiveResolveNamespaceForPrefix: ({\bf NSString} $\ast$) {\em prefix}\/ atNode: (xmlNodePtr) {\em nodePtr}}}
+\label{class_d_d_x_m_l_element_acbb529f3c7f73cc7569eb9e33de5ff87}
+\hypertarget{class_d_d_x_m_l_element_a90f75ab79816e6938433e58b960f3922}{
+\index{DDXMLElement@{DDXMLElement}!\_\-recursiveResolvePrefixForURI:atNode:@{\_\-recursiveResolvePrefixForURI:atNode:}}
+\index{\_\-recursiveResolvePrefixForURI:atNode:@{\_\-recursiveResolvePrefixForURI:atNode:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{\_\-recursiveResolvePrefixForURI:atNode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) \_\-recursiveResolvePrefixForURI: ({\bf NSString} $\ast$) {\em uri}\/ atNode: (xmlNodePtr) {\em nodePtr}}}
+\label{class_d_d_x_m_l_element_a90f75ab79816e6938433e58b960f3922}
+\hypertarget{class_d_d_x_m_l_element_a90f579bbd747393513df84449201c85f}{
+\index{DDXMLElement@{DDXMLElement}!addAttribute:@{addAttribute:}}
+\index{addAttribute:@{addAttribute:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{addAttribute:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addAttribute: ({\bf DDXMLNode} $\ast$) {\em attribute}}}
+\label{class_d_d_x_m_l_element_a90f579bbd747393513df84449201c85f}
+\hypertarget{class_d_d_x_m_l_element_a2a7ef778f931f0fa44e9992a67864957}{
+\index{DDXMLElement@{DDXMLElement}!addAttributeWithName:stringValue:@{addAttributeWithName:stringValue:}}
+\index{addAttributeWithName:stringValue:@{addAttributeWithName:stringValue:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{addAttributeWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addAttributeWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em string}}}
+\label{class_d_d_x_m_l_element_a2a7ef778f931f0fa44e9992a67864957}
+\hypertarget{class_d_d_x_m_l_element_aeeb3826c19f1cc0509d8436c61ea4c26}{
+\index{DDXMLElement@{DDXMLElement}!addChild:@{addChild:}}
+\index{addChild:@{addChild:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{addChild:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addChild: ({\bf DDXMLNode} $\ast$) {\em child}}}
+\label{class_d_d_x_m_l_element_aeeb3826c19f1cc0509d8436c61ea4c26}
+\hypertarget{class_d_d_x_m_l_element_a8945f6c9b65a5c3d76c68ab566e2bf08}{
+\index{DDXMLElement@{DDXMLElement}!addNamespace:@{addNamespace:}}
+\index{addNamespace:@{addNamespace:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{addNamespace:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addNamespace: ({\bf DDXMLNode} $\ast$) {\em aNamespace}}}
+\label{class_d_d_x_m_l_element_a8945f6c9b65a5c3d76c68ab566e2bf08}
+\hypertarget{class_d_d_x_m_l_element_a7d5e3634f6e1cdd6a0b7d23d17c0967e}{
+\index{DDXMLElement@{DDXMLElement}!attributeForName:@{attributeForName:}}
+\index{attributeForName:@{attributeForName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{attributeForName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) attributeForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_a7d5e3634f6e1cdd6a0b7d23d17c0967e}
+\hypertarget{class_d_d_x_m_l_element_a89366024e44ca50a7a8e76a06144d2a5}{
+\index{DDXMLElement@{DDXMLElement}!attributes@{attributes}}
+\index{attributes@{attributes}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{attributes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) attributes }}
+\label{class_d_d_x_m_l_element_a89366024e44ca50a7a8e76a06144d2a5}
+\hypertarget{class_d_d_x_m_l_element_a945ca3ee8a11c606522baca7f7766211}{
+\index{DDXMLElement@{DDXMLElement}!attributesAsDictionary@{attributesAsDictionary}}
+\index{attributesAsDictionary@{attributesAsDictionary}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{attributesAsDictionary}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSDictionary $\ast$) attributesAsDictionary }}
+\label{class_d_d_x_m_l_element_a945ca3ee8a11c606522baca7f7766211}
+\hypertarget{class_d_d_x_m_l_element_a513554279bf1540388cfdce854728211}{
+\index{DDXMLElement@{DDXMLElement}!compactXMLString@{compactXMLString}}
+\index{compactXMLString@{compactXMLString}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{compactXMLString}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) compactXMLString }}
+\label{class_d_d_x_m_l_element_a513554279bf1540388cfdce854728211}
+\hypertarget{class_d_d_x_m_l_element_a07d653b036803ab01ec0cc6ed093e566}{
+\index{DDXMLElement@{DDXMLElement}!elementForName:@{elementForName:}}
+\index{elementForName:@{elementForName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{elementForName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLElement} $\ast$) elementForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_a07d653b036803ab01ec0cc6ed093e566}
+\hypertarget{class_d_d_x_m_l_element_a22aa4e3343d528455683da8da7aa48d7}{
+\index{DDXMLElement@{DDXMLElement}!elementForName:xmlns:@{elementForName:xmlns:}}
+\index{elementForName:xmlns:@{elementForName:xmlns:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{elementForName:xmlns:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLElement} $\ast$) elementForName: ({\bf NSString} $\ast$) {\em name}\/ xmlns: ({\bf NSString} $\ast$) {\em xmlns}}}
+\label{class_d_d_x_m_l_element_a22aa4e3343d528455683da8da7aa48d7}
+\hypertarget{class_d_d_x_m_l_element_af696a4dbd32420584dfc06060ae9f9b8}{
+\index{DDXMLElement@{DDXMLElement}!elementsForLocalName:URI:@{elementsForLocalName:URI:}}
+\index{elementsForLocalName:URI:@{elementsForLocalName:URI:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{elementsForLocalName:URI:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) elementsForLocalName: ({\bf NSString} $\ast$) {\em localName}\/ URI: ({\bf NSString} $\ast$) {\em URI}}}
+\label{class_d_d_x_m_l_element_af696a4dbd32420584dfc06060ae9f9b8}
+\hypertarget{class_d_d_x_m_l_element_a2fbddbefc549e7846f190bb44120986f}{
+\index{DDXMLElement@{DDXMLElement}!elementsForName:@{elementsForName:}}
+\index{elementsForName:@{elementsForName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{elementsForName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) elementsForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_a2fbddbefc549e7846f190bb44120986f}
+Returns the child element nodes (as \hyperlink{class_d_d_x_m_l_element}{DDXMLElement} objects) of the receiver that have a specified name.
+
+If name is a qualified name, then this method invokes elementsForLocalName:URI: with the URI parameter set to the URI associated with the prefix. Otherwise comparison is based on string equality of the qualified or non-\/qualified name. \hypertarget{class_d_d_x_m_l_element_ae3d8acf51242ab375427beda3db62e5f}{
+\index{DDXMLElement@{DDXMLElement}!elementWithName:xmlns:@{elementWithName:xmlns:}}
+\index{elementWithName:xmlns:@{elementWithName:xmlns:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{elementWithName:xmlns:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf DDXMLElement} $\ast$) elementWithName: ({\bf NSString} $\ast$) {\em name}\/ xmlns: ({\bf NSString} $\ast$) {\em ns}}}
+\label{class_d_d_x_m_l_element_ae3d8acf51242ab375427beda3db62e5f}
+\hypertarget{class_d_d_x_m_l_element_a79d712d11aa8f735023fdb5b682765d8}{
+\index{DDXMLElement@{DDXMLElement}!initWithElementPrimitive:owner:@{initWithElementPrimitive:owner:}}
+\index{initWithElementPrimitive:owner:@{initWithElementPrimitive:owner:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{initWithElementPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithElementPrimitive: (xmlNodePtr) {\em node}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{class_d_d_x_m_l_element_a79d712d11aa8f735023fdb5b682765d8}
+\hypertarget{class_d_d_x_m_l_element_a7c33a6a67234196892281f15213fef04}{
+\index{DDXMLElement@{DDXMLElement}!initWithName:@{initWithName:}}
+\index{initWithName:@{initWithName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{initWithName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_a7c33a6a67234196892281f15213fef04}
+\hypertarget{class_d_d_x_m_l_element_a41737cd45eb9d25991217b46e30a0da5}{
+\index{DDXMLElement@{DDXMLElement}!initWithName:stringValue:@{initWithName:stringValue:}}
+\index{initWithName:stringValue:@{initWithName:stringValue:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{initWithName:stringValue:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithName: ({\bf NSString} $\ast$) {\em name}\/ stringValue: ({\bf NSString} $\ast$) {\em string}}}
+\label{class_d_d_x_m_l_element_a41737cd45eb9d25991217b46e30a0da5}
+\hypertarget{class_d_d_x_m_l_element_a9b8b0cad05ffcf784d4799f6a657cca3}{
+\index{DDXMLElement@{DDXMLElement}!initWithName:URI:@{initWithName:URI:}}
+\index{initWithName:URI:@{initWithName:URI:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{initWithName:URI:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithName: ({\bf NSString} $\ast$) {\em name}\/ URI: ({\bf NSString} $\ast$) {\em URI}}}
+\label{class_d_d_x_m_l_element_a9b8b0cad05ffcf784d4799f6a657cca3}
+\hypertarget{class_d_d_x_m_l_element_a8dd59d3ce23a8c817482358862f5c78f}{
+\index{DDXMLElement@{DDXMLElement}!initWithXMLString:error:@{initWithXMLString:error:}}
+\index{initWithXMLString:error:@{initWithXMLString:error:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{initWithXMLString:error:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithXMLString: ({\bf NSString} $\ast$) {\em string}\/ error: (NSError $\ast$$\ast$) {\em error}}}
+\label{class_d_d_x_m_l_element_a8dd59d3ce23a8c817482358862f5c78f}
+\hypertarget{class_d_d_x_m_l_element_ab78a75bb3b6c2f3321bf4c8acb39b41d}{
+\index{DDXMLElement@{DDXMLElement}!insertChild:atIndex:@{insertChild:atIndex:}}
+\index{insertChild:atIndex:@{insertChild:atIndex:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{insertChild:atIndex:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insertChild: ({\bf DDXMLNode} $\ast$) {\em child}\/ atIndex: (NSUInteger) {\em index}}}
+\label{class_d_d_x_m_l_element_ab78a75bb3b6c2f3321bf4c8acb39b41d}
+\hypertarget{class_d_d_x_m_l_element_af104e0a24367ee5d80dc823ff1478fba}{
+\index{DDXMLElement@{DDXMLElement}!namespaceForPrefix:@{namespaceForPrefix:}}
+\index{namespaceForPrefix:@{namespaceForPrefix:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{namespaceForPrefix:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) namespaceForPrefix: ({\bf NSString} $\ast$) {\em prefix}}}
+\label{class_d_d_x_m_l_element_af104e0a24367ee5d80dc823ff1478fba}
+\hypertarget{class_d_d_x_m_l_element_a84bb933cd340d685d22805f6dafce4b2}{
+\index{DDXMLElement@{DDXMLElement}!namespaces@{namespaces}}
+\index{namespaces@{namespaces}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{namespaces}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) namespaces }}
+\label{class_d_d_x_m_l_element_a84bb933cd340d685d22805f6dafce4b2}
+\hypertarget{class_d_d_x_m_l_element_a3968eda63db8b6e150e0647440c6c42a}{
+\index{DDXMLElement@{DDXMLElement}!nodeWithElementPrimitive:owner:@{nodeWithElementPrimitive:owner:}}
+\index{nodeWithElementPrimitive:owner:@{nodeWithElementPrimitive:owner:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{nodeWithElementPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) nodeWithElementPrimitive: (xmlNodePtr) {\em node}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{class_d_d_x_m_l_element_a3968eda63db8b6e150e0647440c6c42a}
+\hypertarget{class_d_d_x_m_l_element_ad95d131bbd82beba4f69e713ed4e11de}{
+\index{DDXMLElement@{DDXMLElement}!prettyXMLString@{prettyXMLString}}
+\index{prettyXMLString@{prettyXMLString}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{prettyXMLString}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) prettyXMLString }}
+\label{class_d_d_x_m_l_element_ad95d131bbd82beba4f69e713ed4e11de}
+\hypertarget{class_d_d_x_m_l_element_ae8bb5b2fa01d039b3013afc16fe234e7}{
+\index{DDXMLElement@{DDXMLElement}!removeAttributeForName:@{removeAttributeForName:}}
+\index{removeAttributeForName:@{removeAttributeForName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{removeAttributeForName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeAttributeForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_ae8bb5b2fa01d039b3013afc16fe234e7}
+\hypertarget{class_d_d_x_m_l_element_aa6bc2079078c24d43cc95937ac3c04bd}{
+\index{DDXMLElement@{DDXMLElement}!removeChildAtIndex:@{removeChildAtIndex:}}
+\index{removeChildAtIndex:@{removeChildAtIndex:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{removeChildAtIndex:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeChildAtIndex: (NSUInteger) {\em index}}}
+\label{class_d_d_x_m_l_element_aa6bc2079078c24d43cc95937ac3c04bd}
+\hypertarget{class_d_d_x_m_l_element_ae129e509356327ebe9b2bfa178114feb}{
+\index{DDXMLElement@{DDXMLElement}!removeNamespaceForPrefix:@{removeNamespaceForPrefix:}}
+\index{removeNamespaceForPrefix:@{removeNamespaceForPrefix:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{removeNamespaceForPrefix:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeNamespaceForPrefix: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_ae129e509356327ebe9b2bfa178114feb}
+\hypertarget{class_d_d_x_m_l_element_afd0fe95a6e828501ee207a5c692bc1e3}{
+\index{DDXMLElement@{DDXMLElement}!resolveNamespaceForName:@{resolveNamespaceForName:}}
+\index{resolveNamespaceForName:@{resolveNamespaceForName:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{resolveNamespaceForName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLNode} $\ast$) resolveNamespaceForName: ({\bf NSString} $\ast$) {\em name}}}
+\label{class_d_d_x_m_l_element_afd0fe95a6e828501ee207a5c692bc1e3}
+Returns the namespace node with the prefix matching the given qualified name. Eg: You pass it \char`\"{}a:dog\char`\"{}, it returns the namespace (defined in this node or parent nodes) that has the \char`\"{}a\char`\"{} prefix. \hypertarget{class_d_d_x_m_l_element_a2b4fa5b03afb01b8c379ffb711614019}{
+\index{DDXMLElement@{DDXMLElement}!resolvePrefixForNamespaceURI:@{resolvePrefixForNamespaceURI:}}
+\index{resolvePrefixForNamespaceURI:@{resolvePrefixForNamespaceURI:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{resolvePrefixForNamespaceURI:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) resolvePrefixForNamespaceURI: ({\bf NSString} $\ast$) {\em namespaceURI}}}
+\label{class_d_d_x_m_l_element_a2b4fa5b03afb01b8c379ffb711614019}
+Returns the prefix associated with the specified URI. Returns a string that is the matching prefix or nil if it finds no matching prefix. \hypertarget{class_d_d_x_m_l_element_ab3c20c2f6b0dfa3f73183b53c0a325ed}{
+\index{DDXMLElement@{DDXMLElement}!setAttributes:@{setAttributes:}}
+\index{setAttributes:@{setAttributes:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{setAttributes:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setAttributes: (NSArray $\ast$) {\em attributes}}}
+\label{class_d_d_x_m_l_element_ab3c20c2f6b0dfa3f73183b53c0a325ed}
+Sets the list of attributes for the element. Any previously set attributes are removed. \hypertarget{class_d_d_x_m_l_element_a27b5fd6a5001e98ef1ab21c914dcd564}{
+\index{DDXMLElement@{DDXMLElement}!setChildren:@{setChildren:}}
+\index{setChildren:@{setChildren:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{setChildren:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setChildren: (NSArray $\ast$) {\em children}}}
+\label{class_d_d_x_m_l_element_a27b5fd6a5001e98ef1ab21c914dcd564}
+\hypertarget{class_d_d_x_m_l_element_a7e1763f7cc29c187309c7efe1a9b16a2}{
+\index{DDXMLElement@{DDXMLElement}!setNamespaces:@{setNamespaces:}}
+\index{setNamespaces:@{setNamespaces:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{setNamespaces:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setNamespaces: (NSArray $\ast$) {\em namespaces}}}
+\label{class_d_d_x_m_l_element_a7e1763f7cc29c187309c7efe1a9b16a2}
+\hypertarget{class_d_d_x_m_l_element_a639df32cb3879409fe2941ef5655fe4c}{
+\index{DDXMLElement@{DDXMLElement}!setXmlns:@{setXmlns:}}
+\index{setXmlns:@{setXmlns:}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{setXmlns:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setXmlns: ({\bf NSString} $\ast$) {\em ns}}}
+\label{class_d_d_x_m_l_element_a639df32cb3879409fe2941ef5655fe4c}
+\hypertarget{class_d_d_x_m_l_element_aaa6f683fff1b13790bc35958ed198e3e}{
+\index{DDXMLElement@{DDXMLElement}!xmlns@{xmlns}}
+\index{xmlns@{xmlns}!DDXMLElement@{DDXMLElement}}
+\subsubsection[{xmlns}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) xmlns }}
+\label{class_d_d_x_m_l_element_aaa6f683fff1b13790bc35958ed198e3e}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Additions/\hyperlink{_d_d_x_m_l_element_additions_8m}{DDXMLElementAdditions.m}\item 
+\hyperlink{_d_d_x_m_l_element_8h}{DDXMLElement.h}\item 
+\hyperlink{_d_d_x_m_l_element_8m}{DDXMLElement.m}\end{DoxyCompactItemize}

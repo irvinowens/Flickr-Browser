@@ -1,0 +1,45 @@
+\hypertarget{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p}{
+\section{$<$PBNSURLConnectionDelegateProtocol$>$ Protocol Reference}
+\label{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p}\index{PBNSURLConnectionDelegateProtocol-\/p@{PBNSURLConnectionDelegateProtocol-\/p}}
+}
+
+
+{\ttfamily \#import $<$PBRequestDelegate.h$>$}
+
+Inheritance diagram for $<$PBNSURLConnectionDelegateProtocol$>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a0b7985884a8aebfbd6cfc1fd176482cd}{connectionFailure:}
+\item 
+(void) -\/ \hyperlink{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a496dbcef3501cd4547745aeb6a4359b6}{receivedData:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a0b7985884a8aebfbd6cfc1fd176482cd}{
+\index{PBNSURLConnectionDelegateProtocol-\/p@{PBNSURLConnectionDelegateProtocol-\/p}!connectionFailure:@{connectionFailure:}}
+\index{connectionFailure:@{connectionFailure:}!PBNSURLConnectionDelegateProtocol-p@{PBNSURLConnectionDelegateProtocol-\/p}}
+\subsubsection[{connectionFailure:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) connectionFailure: (NSError $\ast$) {\em error}}}
+\label{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a0b7985884a8aebfbd6cfc1fd176482cd}
+Inform delegate that the connection failed with the error from the NSURLConnection 
+\begin{DoxyParams}{Parameters}
+\item[{\em (NSError}]$\ast$)error The error \end{DoxyParams}
+\hypertarget{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a496dbcef3501cd4547745aeb6a4359b6}{
+\index{PBNSURLConnectionDelegateProtocol-\/p@{PBNSURLConnectionDelegateProtocol-\/p}!receivedData:@{receivedData:}}
+\index{receivedData:@{receivedData:}!PBNSURLConnectionDelegateProtocol-p@{PBNSURLConnectionDelegateProtocol-\/p}}
+\subsubsection[{receivedData:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) receivedData: (NSData $\ast$) {\em receivedData}}}
+\label{protocol_p_b_n_s_u_r_l_connection_delegate_protocol-p_a496dbcef3501cd4547745aeb6a4359b6}
+Send the completed data back to the delegate 
+\begin{DoxyParams}{Parameters}
+\item[{\em (NSData}]$\ast$)receivedData The data received from the source \end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+PhotoBrowser/\hyperlink{_p_b_request_delegate_8h}{PBRequestDelegate.h}\end{DoxyCompactItemize}

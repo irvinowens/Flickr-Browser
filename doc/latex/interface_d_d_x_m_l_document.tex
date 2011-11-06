@@ -1,0 +1,95 @@
+\hypertarget{interface_d_d_x_m_l_document}{
+\section{DDXMLDocument Class Reference}
+\label{interface_d_d_x_m_l_document}\index{DDXMLDocument@{DDXMLDocument}}
+}
+
+
+{\ttfamily \#import $<$DDXMLDocument.h$>$}
+
+Inheritance diagram for DDXMLDocument:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{interface_d_d_x_m_l_document}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_d_d_x_m_l_document_af23d56200d9ee753e86ce0b7cb55c39a}{initWithXMLString:options:error:}
+\item 
+(id) -\/ \hyperlink{interface_d_d_x_m_l_document_aad220c293e97e2f9d4606445672e0ff4}{initWithData:options:error:}
+\item 
+(\hyperlink{class_d_d_x_m_l_element}{DDXMLElement} $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_document_aa052cb6b8b74bd92daf337e32afa2747}{rootElement}
+\item 
+(NSData $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_document_add299b33a482e3f3847eb8a3f7fa3f99}{XMLData}
+\item 
+(NSData $\ast$) -\/ \hyperlink{interface_d_d_x_m_l_document_ad9a33564e109fc0864e6e717160e6d1b}{XMLDataWithOptions:}
+\item 
+(id) -\/ \hyperlink{interface_d_d_x_m_l_document_aaeed7c9531d8f43583b680d8ca69bf3e}{initWithDocPrimitive:owner:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_d_d_x_m_l_document_ab3dd88e49ab871b27b86ffd44e7aa8dc}{nodeWithDocPrimitive:owner:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Welcome to KissXML.
+
+The project page has documentation if you have questions. \href{https://github.com/robbiehanson/KissXML}{\tt https://github.com/robbiehanson/KissXML}
+
+If you're new to the project you may wish to read the \char`\"{}Getting Started\char`\"{} wiki. \href{https://github.com/robbiehanson/KissXML/wiki/GettingStarted}{\tt https://github.com/robbiehanson/KissXML/wiki/GettingStarted}
+
+KissXML provides a drop-\/in replacement for Apple's NSXML class cluster. The goal is to get the exact same behavior as the NSXML classes.
+
+For API Reference, see Apple's excellent documentation, either via Xcode's Mac OS X documentation, or via the web:
+
+\href{https://github.com/robbiehanson/KissXML/wiki/Reference}{\tt https://github.com/robbiehanson/KissXML/wiki/Reference} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_d_d_x_m_l_document_aad220c293e97e2f9d4606445672e0ff4}{
+\index{DDXMLDocument@{DDXMLDocument}!initWithData:options:error:@{initWithData:options:error:}}
+\index{initWithData:options:error:@{initWithData:options:error:}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{initWithData:options:error:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithData: (NSData $\ast$) {\em data}\/ options: (NSUInteger) {\em mask}\/ error: (NSError $\ast$$\ast$) {\em error}}}
+\label{interface_d_d_x_m_l_document_aad220c293e97e2f9d4606445672e0ff4}
+Initializes and returns a \hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} object created from an NSData object.
+
+Returns an initialized \hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} object, or nil if initialization fails because of parsing errors or other reasons. \hypertarget{interface_d_d_x_m_l_document_aaeed7c9531d8f43583b680d8ca69bf3e}{
+\index{DDXMLDocument@{DDXMLDocument}!initWithDocPrimitive:owner:@{initWithDocPrimitive:owner:}}
+\index{initWithDocPrimitive:owner:@{initWithDocPrimitive:owner:}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{initWithDocPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithDocPrimitive: (xmlDocPtr) {\em doc}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{interface_d_d_x_m_l_document_aaeed7c9531d8f43583b680d8ca69bf3e}
+\hypertarget{interface_d_d_x_m_l_document_af23d56200d9ee753e86ce0b7cb55c39a}{
+\index{DDXMLDocument@{DDXMLDocument}!initWithXMLString:options:error:@{initWithXMLString:options:error:}}
+\index{initWithXMLString:options:error:@{initWithXMLString:options:error:}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{initWithXMLString:options:error:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithXMLString: ({\bf NSString} $\ast$) {\em string}\/ options: (NSUInteger) {\em mask}\/ error: (NSError $\ast$$\ast$) {\em error}}}
+\label{interface_d_d_x_m_l_document_af23d56200d9ee753e86ce0b7cb55c39a}
+Initializes and returns a \hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} object created from an NSData object.
+
+Returns an initialized \hyperlink{interface_d_d_x_m_l_document}{DDXMLDocument} object, or nil if initialization fails because of parsing errors or other reasons. \hypertarget{interface_d_d_x_m_l_document_ab3dd88e49ab871b27b86ffd44e7aa8dc}{
+\index{DDXMLDocument@{DDXMLDocument}!nodeWithDocPrimitive:owner:@{nodeWithDocPrimitive:owner:}}
+\index{nodeWithDocPrimitive:owner:@{nodeWithDocPrimitive:owner:}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{nodeWithDocPrimitive:owner:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) nodeWithDocPrimitive: (xmlDocPtr) {\em doc}\/ owner: ({\bf DDXMLNode} $\ast$) {\em owner}}}
+\label{interface_d_d_x_m_l_document_ab3dd88e49ab871b27b86ffd44e7aa8dc}
+\hypertarget{interface_d_d_x_m_l_document_aa052cb6b8b74bd92daf337e32afa2747}{
+\index{DDXMLDocument@{DDXMLDocument}!rootElement@{rootElement}}
+\index{rootElement@{rootElement}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{rootElement}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf DDXMLElement} $\ast$) rootElement }}
+\label{interface_d_d_x_m_l_document_aa052cb6b8b74bd92daf337e32afa2747}
+Returns the root element of the receiver. \hypertarget{interface_d_d_x_m_l_document_add299b33a482e3f3847eb8a3f7fa3f99}{
+\index{DDXMLDocument@{DDXMLDocument}!XMLData@{XMLData}}
+\index{XMLData@{XMLData}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{XMLData}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSData $\ast$) XMLData }}
+\label{interface_d_d_x_m_l_document_add299b33a482e3f3847eb8a3f7fa3f99}
+\hypertarget{interface_d_d_x_m_l_document_ad9a33564e109fc0864e6e717160e6d1b}{
+\index{DDXMLDocument@{DDXMLDocument}!XMLDataWithOptions:@{XMLDataWithOptions:}}
+\index{XMLDataWithOptions:@{XMLDataWithOptions:}!DDXMLDocument@{DDXMLDocument}}
+\subsubsection[{XMLDataWithOptions:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSData $\ast$) XMLDataWithOptions: (NSUInteger) {\em options}}}
+\label{interface_d_d_x_m_l_document_ad9a33564e109fc0864e6e717160e6d1b}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_d_x_m_l_document_8h}{DDXMLDocument.h}\item 
+\hyperlink{_d_d_x_m_l_document_8m}{DDXMLDocument.m}\end{DoxyCompactItemize}
