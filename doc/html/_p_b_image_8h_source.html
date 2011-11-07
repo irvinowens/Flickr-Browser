@@ -52,63 +52,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00009"></a>00009 <span class="preprocessor">#import &quot;<a class="code" href="_p_b_consts_8h.html">PBConsts.h</a>&quot;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#import &quot;<a class="code" href="_p_b_model_8h.html">PBModel.h</a>&quot;</span>
 <a name="l00011"></a>00011 <span class="preprocessor">#import &quot;<a class="code" href="_p_b_request_factory_8h.html">PBRequestFactory.h</a>&quot;</span>
-<a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="keyword">@protocol </span>PBImageLoadingProtocol;
-<a name="l00014"></a>00014 
-<a name="l00021"></a><a class="code" href="interface_p_b_image.html">00021</a> <span class="keyword">@interface </span><a class="code" href="interface_p_b_image.html">PBImage</a> : <a class="code" href="interface_p_b_model.html">PBModel</a> &lt;<a class="code" href="protocol_p_b_request_data_delegate-p.html">PBRequestDataDelegate</a>&gt;{
-<a name="l00022"></a><a class="code" href="interface_p_b_image.html#ab2b75fc62ad2bd0851e3dbc23970e861">00022</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ab2b75fc62ad2bd0851e3dbc23970e861">imageTitle</a>;
-<a name="l00023"></a><a class="code" href="interface_p_b_image.html#aa261fc22d796a74fe41c14b28e08b30b">00023</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#aa261fc22d796a74fe41c14b28e08b30b">imageId</a>;
-<a name="l00024"></a><a class="code" href="interface_p_b_image.html#ad8ac8644eb2e6a0a2b963a0242235562">00024</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ad8ac8644eb2e6a0a2b963a0242235562">webLink</a>;
-<a name="l00025"></a><a class="code" href="interface_p_b_image.html#a7c9e348da15c9c34c347bcc1bafd6fa2">00025</a>     NSDate *<a class="code" href="interface_p_b_image.html#a7c9e348da15c9c34c347bcc1bafd6fa2">publishedDate</a>;
-<a name="l00026"></a><a class="code" href="interface_p_b_image.html#ad3d43ed4d30cf7a94aea5bd5ae7e0671">00026</a>     NSDate *<a class="code" href="interface_p_b_image.html#ad3d43ed4d30cf7a94aea5bd5ae7e0671">updatedDate</a>;
-<a name="l00027"></a><a class="code" href="interface_p_b_image.html#a9870fa11fd951bc55b7a115c227f0f97">00027</a>     NSDate *<a class="code" href="interface_p_b_image.html#a9870fa11fd951bc55b7a115c227f0f97">takenDate</a>;
-<a name="l00028"></a><a class="code" href="interface_p_b_image.html#a8442f36d5bc844633edba74b62ce2990">00028</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#a8442f36d5bc844633edba74b62ce2990">content</a>;
-<a name="l00029"></a><a class="code" href="interface_p_b_image.html#a71aa8412f076c05a16d5244586dc7955">00029</a>     UIImage *<a class="code" href="interface_p_b_image.html#a71aa8412f076c05a16d5244586dc7955">authorImage</a>;
-<a name="l00030"></a><a class="code" href="interface_p_b_image.html#acc01abe6ae58d15eb68d6f8982922eb0">00030</a>     UIImage *<a class="code" href="interface_p_b_image.html#acc01abe6ae58d15eb68d6f8982922eb0">photoImage</a>;
-<a name="l00031"></a><a class="code" href="interface_p_b_image.html#a246f847f78ea171cf4cce2e6dda32725">00031</a>     UIImage *<a class="code" href="interface_p_b_image.html#a246f847f78ea171cf4cce2e6dda32725">photoThumbnail</a>;
-<a name="l00032"></a><a class="code" href="interface_p_b_image.html#ae1353071f99808617f8d3726ebc0db95">00032</a>     <a class="code" href="interface_p_b_image_request.html">PBImageRequest</a> *<a class="code" href="interface_p_b_image.html#ae1353071f99808617f8d3726ebc0db95">imageRequest</a>;
-<a name="l00033"></a><a class="code" href="interface_p_b_image.html#ad3d1904f67220f320f88ad5b6a9714ef">00033</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ad3d1904f67220f320f88ad5b6a9714ef">authorImageUri</a>;
-<a name="l00034"></a><a class="code" href="interface_p_b_image.html#afd02dd84e4335a88dfb40fa243268f85">00034</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#afd02dd84e4335a88dfb40fa243268f85">photoImageUri</a>;
-<a name="l00035"></a><a class="code" href="interface_p_b_image.html#a68ff9e3c26d377921ce02942d15f7fbb">00035</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#a68ff9e3c26d377921ce02942d15f7fbb">photoThumbnailUri</a>;
-<a name="l00036"></a><a class="code" href="interface_p_b_image.html#a8d9332fcd23523b1e2520b8765577423">00036</a>     <span class="keywordtype">id</span> <a class="code" href="interface_p_b_image.html#a8d9332fcd23523b1e2520b8765577423">delegate</a>;
-<a name="l00037"></a>00037 }
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 @property (strong, nonatomic) id delegate;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *imageTitle;
-<a name="l00042"></a>00042 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *imageId;
-<a name="l00043"></a>00043 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *webLink;
-<a name="l00044"></a>00044 @property (nonatomic, strong) NSDate *publishedDate;
-<a name="l00045"></a>00045 @property (nonatomic, strong) NSDate *updatedDate;
-<a name="l00046"></a><a class="code" href="interface_p_b_image.html#aec17cd0d68172718dfac2208e2f104cd">00046</a> @property (nonatomic, strong) NSDate *dateTaken;
-<a name="l00047"></a>00047 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *content;
-<a name="l00048"></a>00048 @property (nonatomic, strong) UIImage *authorImage;
-<a name="l00049"></a>00049 @property (nonatomic, strong) UIImage *photoImage;
-<a name="l00050"></a>00050 @property (nonatomic, strong) UIImage *photoThumbnail;
-<a name="l00051"></a>00051 @property (nonatomic, strong) <a class="code" href="interface_p_b_image_request.html">PBImageRequest</a> *imageRequest;
-<a name="l00052"></a>00052 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *authorImageUri;
-<a name="l00053"></a>00053 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *photoImageUri;
-<a name="l00054"></a>00054 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *photoThumbnailUri;
-<a name="l00055"></a>00055 
-<a name="l00060"></a>00060 - (<span class="keywordtype">void</span>)loadAuthorImage;
-<a name="l00061"></a>00061 
-<a name="l00066"></a>00066 - (<span class="keywordtype">void</span>)unloadAuthorImage;
-<a name="l00067"></a>00067 
-<a name="l00072"></a>00072 - (<span class="keywordtype">void</span>)loadPhotoImage;
-<a name="l00073"></a>00073 
-<a name="l00078"></a>00078 - (<span class="keywordtype">void</span>)unloadPhotoImage;
-<a name="l00079"></a>00079 
-<a name="l00084"></a>00084 - (<span class="keywordtype">void</span>)loadPhotoThumbnailImage;
-<a name="l00085"></a>00085 
-<a name="l00090"></a>00090 - (<span class="keywordtype">void</span>)unloadPhotoThumbnailImage;
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092 @end
-<a name="l00093"></a>00093 
-<a name="l00094"></a><a class="code" href="protocol_p_b_image_loading_protocol-p.html">00094</a> @protocol PBImageLoadingProtocol &lt;NSObject&gt;
-<a name="l00095"></a>00095 
-<a name="l00101"></a>00101 - (<span class="keywordtype">void</span>)imageLoadedSuccessfully:(<a class="code" href="interface_p_b_image.html">PBImage</a> *)image;
+<a name="l00012"></a>00012 <span class="preprocessor">#import &quot;<a class="code" href="_u_i_image_09_p_b_e_x_i_f_dictionary_8h.html">UIImage+PBEXIFDictionary.h</a>&quot;</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="keyword">@protocol </span>PBImageLoadingProtocol;
+<a name="l00015"></a>00015 
+<a name="l00022"></a><a class="code" href="interface_p_b_image.html">00022</a> <span class="keyword">@interface </span><a class="code" href="interface_p_b_image.html">PBImage</a> : <a class="code" href="interface_p_b_model.html">PBModel</a> &lt;<a class="code" href="protocol_p_b_request_data_delegate-p.html">PBRequestDataDelegate</a>&gt;{
+<a name="l00023"></a><a class="code" href="interface_p_b_image.html#ab2b75fc62ad2bd0851e3dbc23970e861">00023</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ab2b75fc62ad2bd0851e3dbc23970e861">imageTitle</a>;
+<a name="l00024"></a><a class="code" href="interface_p_b_image.html#aa261fc22d796a74fe41c14b28e08b30b">00024</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#aa261fc22d796a74fe41c14b28e08b30b">imageId</a>;
+<a name="l00025"></a><a class="code" href="interface_p_b_image.html#ad8ac8644eb2e6a0a2b963a0242235562">00025</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ad8ac8644eb2e6a0a2b963a0242235562">webLink</a>;
+<a name="l00026"></a><a class="code" href="interface_p_b_image.html#a7c9e348da15c9c34c347bcc1bafd6fa2">00026</a>     NSDate *<a class="code" href="interface_p_b_image.html#a7c9e348da15c9c34c347bcc1bafd6fa2">publishedDate</a>;
+<a name="l00027"></a><a class="code" href="interface_p_b_image.html#ad3d43ed4d30cf7a94aea5bd5ae7e0671">00027</a>     NSDate *<a class="code" href="interface_p_b_image.html#ad3d43ed4d30cf7a94aea5bd5ae7e0671">updatedDate</a>;
+<a name="l00028"></a><a class="code" href="interface_p_b_image.html#a9870fa11fd951bc55b7a115c227f0f97">00028</a>     NSDate *<a class="code" href="interface_p_b_image.html#a9870fa11fd951bc55b7a115c227f0f97">takenDate</a>;
+<a name="l00029"></a><a class="code" href="interface_p_b_image.html#a8442f36d5bc844633edba74b62ce2990">00029</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#a8442f36d5bc844633edba74b62ce2990">content</a>;
+<a name="l00030"></a><a class="code" href="interface_p_b_image.html#a71aa8412f076c05a16d5244586dc7955">00030</a>     <a class="code" href="class_u_i_image.html">UIImage</a> *<a class="code" href="interface_p_b_image.html#a71aa8412f076c05a16d5244586dc7955">authorImage</a>;
+<a name="l00031"></a><a class="code" href="interface_p_b_image.html#acc01abe6ae58d15eb68d6f8982922eb0">00031</a>     <a class="code" href="class_u_i_image.html">UIImage</a> *<a class="code" href="interface_p_b_image.html#acc01abe6ae58d15eb68d6f8982922eb0">photoImage</a>;
+<a name="l00032"></a><a class="code" href="interface_p_b_image.html#a246f847f78ea171cf4cce2e6dda32725">00032</a>     <a class="code" href="class_u_i_image.html">UIImage</a> *<a class="code" href="interface_p_b_image.html#a246f847f78ea171cf4cce2e6dda32725">photoThumbnail</a>;
+<a name="l00033"></a><a class="code" href="interface_p_b_image.html#ae1353071f99808617f8d3726ebc0db95">00033</a>     <a class="code" href="interface_p_b_image_request.html">PBImageRequest</a> *<a class="code" href="interface_p_b_image.html#ae1353071f99808617f8d3726ebc0db95">imageRequest</a>;
+<a name="l00034"></a><a class="code" href="interface_p_b_image.html#ad3d1904f67220f320f88ad5b6a9714ef">00034</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#ad3d1904f67220f320f88ad5b6a9714ef">authorImageUri</a>;
+<a name="l00035"></a><a class="code" href="interface_p_b_image.html#afd02dd84e4335a88dfb40fa243268f85">00035</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#afd02dd84e4335a88dfb40fa243268f85">photoImageUri</a>;
+<a name="l00036"></a><a class="code" href="interface_p_b_image.html#a68ff9e3c26d377921ce02942d15f7fbb">00036</a>     <a class="code" href="class_n_s_string.html">NSString</a> *<a class="code" href="interface_p_b_image.html#a68ff9e3c26d377921ce02942d15f7fbb">photoThumbnailUri</a>;
+<a name="l00037"></a><a class="code" href="interface_p_b_image.html#a8d9332fcd23523b1e2520b8765577423">00037</a>     <span class="keywordtype">id</span> <a class="code" href="interface_p_b_image.html#a8d9332fcd23523b1e2520b8765577423">delegate</a>;
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 @property (strong, nonatomic) id delegate;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *imageTitle;
+<a name="l00043"></a>00043 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *imageId;
+<a name="l00044"></a>00044 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *webLink;
+<a name="l00045"></a>00045 @property (nonatomic, strong) NSDate *publishedDate;
+<a name="l00046"></a>00046 @property (nonatomic, strong) NSDate *updatedDate;
+<a name="l00047"></a><a class="code" href="interface_p_b_image.html#aec17cd0d68172718dfac2208e2f104cd">00047</a> @property (nonatomic, strong) NSDate *dateTaken;
+<a name="l00048"></a>00048 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *content;
+<a name="l00049"></a>00049 @property (nonatomic, strong) <a class="code" href="class_u_i_image.html">UIImage</a> *authorImage;
+<a name="l00050"></a>00050 @property (nonatomic, strong) <a class="code" href="class_u_i_image.html">UIImage</a> *photoImage;
+<a name="l00051"></a>00051 @property (nonatomic, strong) <a class="code" href="class_u_i_image.html">UIImage</a> *photoThumbnail;
+<a name="l00052"></a>00052 @property (nonatomic, strong) <a class="code" href="interface_p_b_image_request.html">PBImageRequest</a> *imageRequest;
+<a name="l00053"></a>00053 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *authorImageUri;
+<a name="l00054"></a>00054 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *photoImageUri;
+<a name="l00055"></a>00055 @property (nonatomic, strong) <a class="code" href="class_n_s_string.html">NSString</a> *photoThumbnailUri;
+<a name="l00056"></a>00056 
+<a name="l00061"></a>00061 - (<span class="keywordtype">void</span>)loadAuthorImage;
+<a name="l00062"></a>00062 
+<a name="l00067"></a>00067 - (<span class="keywordtype">void</span>)unloadAuthorImage;
+<a name="l00068"></a>00068 
+<a name="l00073"></a>00073 - (<span class="keywordtype">void</span>)loadPhotoImage;
+<a name="l00074"></a>00074 
+<a name="l00079"></a>00079 - (<span class="keywordtype">void</span>)unloadPhotoImage;
+<a name="l00080"></a>00080 
+<a name="l00085"></a>00085 - (<span class="keywordtype">void</span>)loadPhotoThumbnailImage;
+<a name="l00086"></a>00086 
+<a name="l00091"></a>00091 - (<span class="keywordtype">void</span>)unloadPhotoThumbnailImage;
+<a name="l00092"></a>00092 
+<a name="l00097"></a>00097 - (<span class="keywordtype">void</span>)getExifDataFromImage;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 @end
+<a name="l00100"></a>00100 
+<a name="l00101"></a><a class="code" href="protocol_p_b_image_loading_protocol-p.html">00101</a> @protocol PBImageLoadingProtocol &lt;NSObject&gt;
 <a name="l00102"></a>00102 
-<a name="l00103"></a>00103 @end
+<a name="l00108"></a>00108 - (<span class="keywordtype">void</span>)imageLoadedSuccessfully:(<a class="code" href="interface_p_b_image.html">PBImage</a> *)image;
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -124,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address style="text-align: right;"><small>Generated on Sat Nov 5 18:53:07 2011 for Photo Browser by&nbsp;
+<hr class="footer"/><address style="text-align: right;"><small>Generated on Mon Nov 7 00:30:20 2011 for Photo Browser by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
 </body>

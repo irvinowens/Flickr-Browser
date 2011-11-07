@@ -9,6 +9,7 @@
 #import "PBConsts.h"
 #import "PBModel.h"
 #import "PBRequestFactory.h"
+#import "UIImage+PBEXIFDictionary.h"
 
 @protocol PBImageLoadingProtocol;
 
@@ -88,6 +89,12 @@
  */
 
 - (void)unloadPhotoThumbnailImage;
+
+/**
+ * Read out exif data from the image
+ */
+
+- (void)getExifDataFromImage;
 
 @end
 

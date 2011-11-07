@@ -26,6 +26,8 @@ Inheritance diagram for PBImage:\begin{figure}[H]
 (void) -\/ \hyperlink{interface_p_b_image_a002ec7944ae9c0e779867a42af048945}{loadPhotoThumbnailImage}
 \item 
 (void) -\/ \hyperlink{interface_p_b_image_a4b836242ce7c4ce1cd008a487481d6bf}{unloadPhotoThumbnailImage}
+\item 
+(void) -\/ \hyperlink{interface_p_b_image_a78fb2648c08eabfa20cca7831d8af078}{getExifDataFromImage}
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -51,11 +53,11 @@ NSDate $\ast$ \hyperlink{interface_p_b_image_aec17cd0d68172718dfac2208e2f104cd}{
 \item 
 \hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_p_b_image_a8442f36d5bc844633edba74b62ce2990}{content}
 \item 
-UIImage $\ast$ \hyperlink{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}{authorImage}
+\hyperlink{class_u_i_image}{UIImage} $\ast$ \hyperlink{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}{authorImage}
 \item 
-UIImage $\ast$ \hyperlink{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}{photoImage}
+\hyperlink{class_u_i_image}{UIImage} $\ast$ \hyperlink{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}{photoImage}
 \item 
-UIImage $\ast$ \hyperlink{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}{photoThumbnail}
+\hyperlink{class_u_i_image}{UIImage} $\ast$ \hyperlink{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}{photoThumbnail}
 \item 
 \hyperlink{interface_p_b_image_request}{PBImageRequest} $\ast$ \hyperlink{interface_p_b_image_ae1353071f99808617f8d3726ebc0db95}{imageRequest}
 \item 
@@ -71,7 +73,12 @@ UIImage $\ast$ \hyperlink{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}
 The \hyperlink{interface_p_b_image}{PBImage} model is the domain entity that encapsulates a flickr photo, it also provides caching for the image objects that will back the UI 
 
 \subsection{Member Function Documentation}
-\hypertarget{interface_p_b_image_a4af15f2a0b22a1cb6fb88aafbc7fa2d5}{
+\hypertarget{interface_p_b_image_a78fb2648c08eabfa20cca7831d8af078}{
+\index{PBImage@{PBImage}!getExifDataFromImage@{getExifDataFromImage}}
+\index{getExifDataFromImage@{getExifDataFromImage}!PBImage@{PBImage}}
+\subsubsection[{getExifDataFromImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) getExifDataFromImage }}
+\label{interface_p_b_image_a78fb2648c08eabfa20cca7831d8af078}
+Read out exif data from the image \hypertarget{interface_p_b_image_a4af15f2a0b22a1cb6fb88aafbc7fa2d5}{
 \index{PBImage@{PBImage}!loadAuthorImage@{loadAuthorImage}}
 \index{loadAuthorImage@{loadAuthorImage}!PBImage@{PBImage}}
 \subsubsection[{loadAuthorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadAuthorImage }}
@@ -115,7 +122,7 @@ Unload the photo thumbnail from the model
 \hypertarget{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}{
 \index{PBImage@{PBImage}!authorImage@{authorImage}}
 \index{authorImage@{authorImage}!PBImage@{PBImage}}
-\subsubsection[{authorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) authorImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\subsubsection[{authorImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf UIImage} $\ast$) authorImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
 \label{interface_p_b_image_a71aa8412f076c05a16d5244586dc7955}
 \hypertarget{interface_p_b_image_ad3d1904f67220f320f88ad5b6a9714ef}{
 \index{PBImage@{PBImage}!authorImageUri@{authorImageUri}}
@@ -155,7 +162,7 @@ Unload the photo thumbnail from the model
 \hypertarget{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}{
 \index{PBImage@{PBImage}!photoImage@{photoImage}}
 \index{photoImage@{photoImage}!PBImage@{PBImage}}
-\subsubsection[{photoImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) photoImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\subsubsection[{photoImage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf UIImage} $\ast$) photoImage\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
 \label{interface_p_b_image_acc01abe6ae58d15eb68d6f8982922eb0}
 \hypertarget{interface_p_b_image_afd02dd84e4335a88dfb40fa243268f85}{
 \index{PBImage@{PBImage}!photoImageUri@{photoImageUri}}
@@ -165,7 +172,7 @@ Unload the photo thumbnail from the model
 \hypertarget{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}{
 \index{PBImage@{PBImage}!photoThumbnail@{photoThumbnail}}
 \index{photoThumbnail@{photoThumbnail}!PBImage@{PBImage}}
-\subsubsection[{photoThumbnail}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (UIImage $\ast$) photoThumbnail\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\subsubsection[{photoThumbnail}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf UIImage} $\ast$) photoThumbnail\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
 \label{interface_p_b_image_a246f847f78ea171cf4cce2e6dda32725}
 \hypertarget{interface_p_b_image_a68ff9e3c26d377921ce02942d15f7fbb}{
 \index{PBImage@{PBImage}!photoThumbnailUri@{photoThumbnailUri}}

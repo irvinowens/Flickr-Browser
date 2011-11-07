@@ -24,6 +24,8 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    [self setBackgroundColor:[UIColor blackColor]];
+    [self.textLabel setTextColor:[UIColor whiteColor]];
     [self.image loadPhotoThumbnailImage];
 }
 

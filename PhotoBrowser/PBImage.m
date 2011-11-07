@@ -47,6 +47,11 @@
     self.photoThumbnail = nil;
 }
 
+- (void)getExifDataFromImage
+{
+    //self.photoThumbnail.exifDictionary;
+}
+
 #pragma mark-
 #pragma mark Begin PBFeedRequestDelegate methods
 

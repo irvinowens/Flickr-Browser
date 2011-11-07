@@ -35,11 +35,10 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+    
     if (self.detailItem) {
         //[self.imageView setImage:self.detailItem.image.photoImage];
         [self.progressView setAlpha:1.0f];
-        [self.detailItem.image loadPhotoImage];
         self.detailDescriptionLabel.text = [NSString stringWithFormat:@"Loading %@",self.detailItem.image.imageTitle];
         self.title = self.detailItem.image.imageTitle;
         [UIView animateWithDuration:3.0f 
@@ -82,6 +81,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [self.imageView setImage:self.detailItem.image.photoThumbnail];
+    [self.detailItem.image loadPhotoImage];
     [super viewDidAppear:animated];
 }
 
@@ -99,6 +99,13 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAuthorInformation"]) {
+        [(PBAuthorInformationController *)[segue destinationViewController] setPicture:self.detailItem];
+    }
 }
 
 #pragma mark-

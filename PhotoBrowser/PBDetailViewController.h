@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PBFlickrPicture.h"
+#import "PBAuthorInformationController.h"
 
 @interface PBDetailViewController : UIViewController<PBImageLoadingProtocol>
 

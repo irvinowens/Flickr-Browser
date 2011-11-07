@@ -83,6 +83,7 @@
         author.name = [[authorElement childAtIndex:0] stringValue];
         author.profileUri = [[authorElement childAtIndex:1] stringValue];
         author.buddyIcon = [[authorElement childAtIndex:3] stringValue];
+        DebugLog(@"Buddy Icon URI : %@", author.buddyIcon);
     }
     return author;
 }
